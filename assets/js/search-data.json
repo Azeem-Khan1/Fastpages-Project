@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "PBL Binary Notes",
-            "content": "",
+            "content": "Front matter example of METADATA (data about the data) | data about the post, not in the post Humans have names (data about them) | Human names are not inside a person | . | . | LIQUID: Code that exits in the programming environment, but gets converted to something else when sent to the browser Code makeover (occurs in GitHub actions / GitHub pages build) | . | .",
             "url": "https://azeem-khan1.github.io/fastpages-project/notes/pblbinarynotes",
             "relUrl": "/notes/pblbinarynotes",
             "date": " • Nov 17, 2022"
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Binary Math (Interactive Application Activity)",
-            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | . | | | .",
+            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | .",
             "url": "https://azeem-khan1.github.io/fastpages-project/pbl/binary",
             "relUrl": "/pbl/binary",
             "date": " • Nov 15, 2022"
