@@ -4,8 +4,8 @@ description: Hacks for Program Design AP Classroom (Week 6)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/programdesign_1-3
-categories: [hacks]
+permalink: /week6/programdesign_1-3
+categories: [week 06]
 tags: [apclassroom]
 ---
 

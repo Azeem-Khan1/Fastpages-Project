@@ -4,8 +4,8 @@ description: Hacks for Create Performance Task (Week 3)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/Create_Performance_Task
-categories: [hacks]
+permalink: /week3/Create_Performance_Task
+categories: [week 03]
 tags: [markdown]
 ---
 

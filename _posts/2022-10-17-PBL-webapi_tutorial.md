@@ -4,8 +4,8 @@ description: A discussion on Web APIs.  This is about creating a Web API (Jokes)
 title: Python Web API Endpoints using Jokes
 toc: true
 comments: true
-permalink: /jupyter/webapijokes
-categories: [jupyter]
+permalink: /week8/webapijokes
+categories: [week 08]
 nb_path: _notebooks/2022-10-17-PBL-webapi_tutorial.ipynb
 layout: notebook
 ---

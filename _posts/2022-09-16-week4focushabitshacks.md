@@ -4,9 +4,8 @@ description: Hacks for Focus and Habits (Week 4)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/focusandhabitsweek4
-categories: [hacks]
-tags: [markdown]
+permalink: /week4/focusandhabitsweek4
+categories: [week 04]
 ---
 
 # [Video](https://youtu.be/ZizdB0TgAVM)

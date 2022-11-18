@@ -4,8 +4,8 @@ description: Hacks for HTML Fragments (Week 2)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/HTML_fragments
-categories: [hacks]
+permalink: /week2/HTML_fragments
+categories: [week 02]
 tags: [markdown, HTML]
 ---
 

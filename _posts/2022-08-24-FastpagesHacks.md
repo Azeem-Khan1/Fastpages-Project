@@ -5,8 +5,8 @@ title: Fastpages Hacks
 toc: true 
 badges: true
 comments: true
-permalink: /hacks/fastpageshacks
-categories: [hacks]
+permalink: /week1/fastpageshacks
+categories: [week 01]
 nb_path: _notebooks/2022-08-24-FastpagesHacks.ipynb
 layout: notebook
 ---

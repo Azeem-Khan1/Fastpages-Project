@@ -4,8 +4,8 @@ description: Practice with identifying and correcting code blocks & Hacks
 title: Big Idea 1 'Identifying and Correcting Errors' Hacks
 layout: default
 comments: true
-permalink: /hacks/ap_error_testing
-categories: [hacks]
+permalink: /week7/ap_error_testing
+categories: [week 07]
 nb_path: _notebooks/2022-10-03-AP-error_testing.ipynb
 layout: notebook
 ---

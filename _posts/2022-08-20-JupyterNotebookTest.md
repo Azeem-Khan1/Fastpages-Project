@@ -5,7 +5,8 @@ title: First Jupyter Notebook in VSCode
 toc: true 
 badges: true
 comments: true
-categories: [jupyter]
+permalink: /week1/jupyternotebook
+categories: [week 01]
 nb_path: _notebooks/2022-08-20-JupyterNotebookTest.ipynb
 layout: notebook
 ---

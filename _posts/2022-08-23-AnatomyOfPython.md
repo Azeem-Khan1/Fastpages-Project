@@ -5,8 +5,8 @@ title: Anatomy of Python (First Python post)
 toc: true 
 badges: true
 comments: true
-permalink: /hacks/anatomyofpython
-categories: [hacks]
+permalink: /week1/anatomyofpython
+categories: [week 01]
 tags: [python]
 nb_path: _notebooks/2022-08-23-AnatomyOfPython.ipynb
 layout: notebook

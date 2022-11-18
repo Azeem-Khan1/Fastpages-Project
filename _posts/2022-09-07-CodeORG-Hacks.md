@@ -4,8 +4,8 @@ description: This is an activity that my partner and I completed using Applab by
 title: AppLab Quiz and Hacks
 toc: true
 comments: true
-permalink: /hacks/applab_quiz
-categories: [hacks]
+permalink: /week3/applab_quiz
+categories: [week 03]
 tags: [javascript]
 nb_path: _notebooks/2022-09-07-CodeORG-Hacks.ipynb
 layout: notebook

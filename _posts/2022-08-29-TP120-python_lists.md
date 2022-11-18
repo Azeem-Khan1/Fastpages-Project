@@ -4,8 +4,8 @@ description: In-class activity for Lists, Dictionaries, and Iterations, plus hac
 title: Lists, Dictionaries, Iterations
 toc: true
 comments: true
-permalink: /hacks/python_lists
-categories: [hacks]
+permalink: /week2/python_lists
+categories: [week 02]
 tags: [python]
 nb_path: _notebooks/2022-08-29-TP120-python_lists.ipynb
 layout: notebook

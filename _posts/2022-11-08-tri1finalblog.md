@@ -4,8 +4,8 @@ description: Corrections and blog on trimester 1 final
 toc: true
 comments: true
 layout: post
-permalink: /markdown/tri1finalblog
-categories: [markdown]
+permalink: /week12/tri1finalblog
+categories: [week 12]
 ---
 
 # Final Exam

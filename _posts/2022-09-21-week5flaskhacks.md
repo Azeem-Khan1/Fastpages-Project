@@ -4,8 +4,8 @@ description: Hacks for individual flask repository (Week 5)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/week5flaskhacks
-categories: [hacks]
+permalink: /week5/week5flaskhacks
+categories: [week 05]
 tags: [flask]
 ---
 

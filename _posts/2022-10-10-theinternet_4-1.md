@@ -4,8 +4,8 @@ description: Hacks for The Internet (Week 6)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/theinternet_4-1
-categories: [hacks]
+permalink: /week7/theinternet_4-1
+categories: [week 07]
 tags: [apclassroom]
 ---
 

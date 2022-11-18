@@ -5,8 +5,8 @@ title: First Bash Project
 toc: true 
 badges: true
 comments: true
-permalink: /hacks/bashhacks
-categories: [hacks]
+permalink: /week1/bashhacks
+categories: [week 01]
 tags: [bash]
 nb_path: _notebooks/2022-08-22-BashHacks.ipynb
 layout: notebook

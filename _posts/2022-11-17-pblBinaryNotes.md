@@ -3,8 +3,9 @@ title: PBL Binary Notes
 toc: true
 comments: true
 layout: post
-permalink: /notes/pblbinarynotes
-categories: [notes]
+permalink: /week13/pblbinarynotes
+categories: [week 13]
+tags: [notes]
 ---
 
 - Front matter

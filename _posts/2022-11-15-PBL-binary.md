@@ -2,9 +2,9 @@
 title: Binary Math (Interactive Application Activity)
 layout: post
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
-permalink: /pbl/binary
-categories: [hacks]
-tags: [html, liquid, javascript, activity]
+permalink: /week13/binary
+categories: [week 13]
+tags: [html, liquid, javascript, activity, pbl]
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->

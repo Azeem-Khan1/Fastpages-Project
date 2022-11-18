@@ -4,8 +4,8 @@ description: Hacks for Program Function and Purpose (Week 5)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/programfunctionandpurpose_1-2
-categories: [hacks]
+permalink: /week5/programfunctionandpurpose_1-2
+categories: [week 05]
 tags: [apclassroom]
 ---
 

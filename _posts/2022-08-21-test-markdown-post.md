@@ -3,8 +3,9 @@ toc: true
 layout: post
 description: I'm just trying to experiment with stuff at this point.
 image: /images/unsure.png
-categories: [markdown]
+categories: [week 01]
 title: Here is an extra post because why not!
+permalink: /week1/testmarkdownpost
 ---
 # Testing some stuff
 

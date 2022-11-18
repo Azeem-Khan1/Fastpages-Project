@@ -4,8 +4,8 @@ description: Hacks for Fastpages Local Server (Week 4)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/fastpageslocalserver
-categories: [hacks]
+permalink: /week4/fastpageslocalserver
+categories: [week 04]
 tags: [markdown]
 ---
 

@@ -5,8 +5,8 @@ title: JavaScript Tutorial
 toc: true
 comments: true
 Title: Javascript Tutorial
-permalink: /hacks/jstutorial
-categories: [hacks]
+permalink: /week5/jstutorial
+categories: [week 05]
 tags: [javascript]
 nb_path: _notebooks/2022-09-21-TT130-js_tutorial.ipynb
 layout: notebook

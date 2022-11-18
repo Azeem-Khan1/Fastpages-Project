@@ -8,7 +8,8 @@ permalink: /notes/
 # Week 13
 - Choose groups of 4 (Akshat, Ahad, Josh, Azeem)
   - Choose teaching topic (ours is 3.9 and 3.11 on [College Board / AP Classroom](https://apclassroom.collegeboard.org/103/home))
-- Dissect [Binary Math (Interactive Application Activity)](https://azeem-khan1.github.io/fastpages-project/pbl/binary)
+- Dissect [Binary Math (Interactive Application Activity)](https://azeem-khan1.github.io/fastpages-project/week13/binary)
+- Took [notes](https://azeem-khan1.github.io/fastpages-project/week13/pblbinarynotes) on lecture (11/17/2022)
 
 # Week 12
 - Prepare for N@TM
@@ -48,7 +49,7 @@ permalink: /notes/
 
 # Week 6
 
-- Complete [Program Design AP Classroom 1.3](https://azeem-khan1.github.io/fastpages-project/hacks/programdesign_1-3)
+- Complete [Program Design AP Classroom 1.3](https://azeem-khan1.github.io/fastpages-project/week6/programdesign_1-3)
 - Add a page for [contributions](https://azeem-khan1.github.io/fastpages-project/contributions)
 - Worked on [AWS deployment](https://azeem-khan1.github.io/fastpages-project/hacks/awsdeployment)
 
@@ -61,12 +62,12 @@ permalink: /notes/
 
 # Week 5
 
-- Completed [Program Function and Purpose 1.2 Hacks](https://azeem-khan1.github.io/fastpages-project/hacks/programfunctionandpurpose_1-2)
+- Completed [Program Function and Purpose 1.2 Hacks](https://azeem-khan1.github.io/fastpages-project/week5/programfunctionandpurpose_1-2)
   - Created a group on [Notion](https://www.notion.so/)
     - Made a scrum board for the end of trimester project
     - developed a basic idea for what the project will be
-- Completed [Individual Flask Hacks](https://azeem-khan1.github.io/fastpages-project/hacks/week5flaskhacks)
-- Completed [Group Flask Hacks](https://azeem-khan1.github.io/fastpages-project/hacks/week5groupflaskhacks)
+- Completed [Individual Flask Hacks](https://azeem-khan1.github.io/fastpages-project/week5/week5flaskhacks)
+- Completed [Group Flask Hacks](https://azeem-khan1.github.io/fastpages-project/week5/week5groupflaskhacks)
 - Created a [submenu]({{site.baseurl}}/submenu) in \_pages
   - Includes a link to a Jupyter Notebook post with executed JS cells to show functionality of JS Kernel
   - Includes a link to a page with a table made with HTML fragments and JS
@@ -82,10 +83,10 @@ permalink: /notes/
 
 # Week 4
 
-- Completed [Collaboration 1.1 Video Notes and Hacks](https://azeem-khan1.github.io/fastpages-project/hacks/collaboration_1-1)
-- Installed Docker Desktop and test a [Fastpages Local Server](https://azeem-khan1.github.io/fastpages-project/hacks/fastpageslocalserver)
+- Completed [Collaboration 1.1 Video Notes and Hacks](https://azeem-khan1.github.io/fastpages-project/week4/collaboration_1-1)
+- Installed Docker Desktop and test a [Fastpages Local Server](https://azeem-khan1.github.io/fastpages-project/week4/fastpageslocalserver)
 - Set up a couple flask repositories (one individual, one group)
-  - [Flask hacks](http://localhost:4000/fastpages-project/hacks/flaskhacks)
+  - [Flask hacks](http://localhost:4000/fastpages-project/week4/flaskhacks)
 
 ## Week 4 Notable Terms
 
@@ -97,10 +98,10 @@ permalink: /notes/
 
 # Week 3
 
-- Got familiar with AppLab and completed [quiz hacks](https://azeem-khan1.github.io/fastpages-project/hacks/applab_quiz)
+- Got familiar with AppLab and completed [quiz hacks](https://azeem-khan1.github.io/fastpages-project/week3/applab_quiz)
   - link to the [quiz](https://studio.code.org/projects/applab/--lWSXIASPrNfBPcrQvILzJ2xavbndxXWCYvtsrp24I) that my partner and I created
 - Created [Sprint Backlog](https://azeem-khan1.github.io/fastpages-project/sprintbacklog/)
-- Create Performance Task [hacks](https://azeem-khan1.github.io/fastpages-project/hacks/Create_Performance_Task)
+- Create Performance Task [hacks](https://azeem-khan1.github.io/fastpages-project/week3/Create_Performance_Task)
   - Link to my [Performance Task](https://studio.code.org/projects/applab/h3hA8Qkx_rMF5kAi65xjePKOq6U5V-0_m-8bFrAyG9w)
 
 ## Week 3 Notable Terms
@@ -114,10 +115,10 @@ permalink: /notes/
 
 # Week 2
 
-- Completed in-class [activity](https://azeem-khan1.github.io/fastpages-project/hacks/python_lists) for Python Lists and Dictionaries (cloned from APCSP repository)
-  - Completed [hacks](https://azeem-khan1.github.io/fastpages-project/hacks/python_lists#Hacks) as well
+- Completed in-class [activity](https://azeem-khan1.github.io/fastpages-project/week2/python_lists) for Python Lists and Dictionaries (cloned from APCSP repository)
+  - Completed [hacks](https://azeem-khan1.github.io/fastpages-project/week2/python_lists#Hacks) as well
 - Experimented with new web page layouts and taking fragments from other web pages
-  - Completed [hacks](https://azeem-khan1.github.io/fastpages-project/hacks/HTML_fragments) for HTML Fragments
+  - Completed [hacks](https://azeem-khan1.github.io/fastpages-project/week2/HTML_fragments) for HTML Fragments
 
 ## Week 2 Notable Terms
 
@@ -132,19 +133,19 @@ permalink: /notes/
 
 # Week 1
 
-- Completed [bash checks and hacks](https://azeem-khan1.github.io/fastpages-project/hacks/bashhacks) _(Hacks #1)_
-- Began [coding with Python](https://azeem-khan1.github.io/fastpages-project/hacks/anatomyofpython)
+- Completed [bash checks and hacks](https://azeem-khan1.github.io/fastpages-project/week1/bashhacks) _(Hacks #1)_
+- Began [coding with Python](https://azeem-khan1.github.io/fastpages-project/week1/anatomyofpython)
   - Hello to Python
   - Test quiz.py in terminal
   - Practice building functions
   - Create an interactive quiz about Python _(Hacks #2)_
-- [Customized Fastpage further](https://azeem-khan1.github.io/fastpages-project/hacks/fastpageshacks) _(Hacks #3)_
+- [Customized Fastpage further](https://azeem-khan1.github.io/fastpages-project/week1/fastpageshacks) _(Hacks #3)_
   - Changed index.html
   - Added new page for [Notes](https://azeem-khan1.github.io/fastpages-project/notes/) (this page!)
-  - Created new [page](https://azeem-khan1.github.io/fastpages-project/purpose/) to describe the purpose of this site
-  - [First Notebook post](https://azeem-khan1.github.io/fastpages-project/jupyter/2022/08/20/JupyterNotebookTest.html)
-  - [Post with image](https://azeem-khan1.github.io/fastpages-project/markdown/2022/08/21/test-markdown-post.html) (The image is visible on my fastpages homepage)
-  - [First docx post](https://azeem-khan1.github.io/fastpages-project/2022/08/26/firstworddoc.html)
+  - Created new [page](https://azeem-khan1.github.io/fastpages-project/about/) to describe the creator of this site
+  - [First Notebook post](https://azeem-khan1.github.io/fastpages-project/week1/jupyternotebook)
+  - [Post with image](https://azeem-khan1.github.io/fastpages-project/week1/testmarkdownpost) (The image is visible on my fastpages homepage)
+  - [First docx post](https://azeem-khan1.github.io/fastpages-project/week1firstworddoc.html)
 
 ## Week 1 Notable Terms
 

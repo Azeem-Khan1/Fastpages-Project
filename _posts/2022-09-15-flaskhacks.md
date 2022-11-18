@@ -4,9 +4,9 @@ description: Hacks for Flask (Week 4)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/flaskhacks
-categories: [hacks]
-tags: [markdown]
+permalink: /week4/flaskhacks
+categories: [week 04]
+tags: [flask]
 ---
 
 # Hacks

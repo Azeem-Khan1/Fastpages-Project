@@ -4,8 +4,8 @@ description: Hacks for AWS Deployment (Week 6)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/awsdeployment
-categories: [hacks]
+permalink: /week6/awsdeployment
+categories: [week 06]
 tags: [aws]
 ---
 

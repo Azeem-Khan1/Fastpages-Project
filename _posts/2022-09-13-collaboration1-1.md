@@ -4,8 +4,8 @@ description: Hacks for Collaboration 1.1 (Week 4)
 toc: true
 comments: true
 layout: post
-permalink: /hacks/collaboration_1-1
-categories: [hacks]
+permalink: /week4/collaboration_1-1
+categories: [week 04]
 tags: [apclassroom]
 ---
 
