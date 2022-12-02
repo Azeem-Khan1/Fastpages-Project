@@ -354,8 +354,8 @@ xor 0 ^ 0: 0
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>You selected 7 terms.
-Fibonacci sequence from term 1 to term 7:
+<pre>You selected 11 terms.
+Fibonacci sequence from term 1 to term 11:
 0
 1
 1
@@ -363,6 +363,10 @@ Fibonacci sequence from term 1 to term 7:
 3
 5
 8
+13
+21
+34
+55
 </pre>
 </div>
 </div>
