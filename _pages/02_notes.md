@@ -5,6 +5,18 @@ toc: true
 permalink: /notes/
 ---
 
+# Week 14
+- Worked on student lesson plan for 3.9 and 3.11
+- [3.1 & 3.2 Student Teaching](https://azeem-khan1.github.io/fastpages-project/lesson1-2)
+  - completed notes + homework (quiz using python dictionary)
+- [3.3 & 3.4 Student Teaching](https://azeem-khan1.github.io/fastpages-project/lesson3-4)
+  - completed notes + homework
+    - Tracking variables
+    - Organizing and concatenating strings
+- [3.5 - 3.7 Student Teaching](https://azeem-khan1.github.io/fastpages-project/lesson5-6-7)
+  - completed notes
+- Organized [Student Teaching Portfolio](https://azeem-khan1.github.io/fastpages-project/categories/#Student%20Teaching%20Portfolio) using a category in Fastpages (separate notebook post for each lesson covered)
+
 # Week 13
 - Choose groups of 4 (Akshat, Ahad, Josh, Azeem)
   - Choose teaching topic (ours is 3.9 and 3.11 on [College Board / AP Classroom](https://apclassroom.collegeboard.org/103/home))
