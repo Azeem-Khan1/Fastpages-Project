@@ -1,6 +1,6 @@
 ---
-title: Trimester 1 Final Blog
-description: Corrections and blog on trimester 1 final
+title: Homework Grades Table (Student Teaching)
+description: Homework Grades
 toc: true
 comments: true
 layout: post
