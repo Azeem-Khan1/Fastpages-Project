@@ -393,15 +393,14 @@ MOVE_FORWARD()</p>
 <span class="c1"># Calculates how your grade is curved</span>
 <span class="c1"># (assuming the highest score out of the class is set as the new total # of points)</span>
 <span class="k">def</span> <span class="nf">curveCalculator</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">highScore</span><span class="p">):</span>
-    <span class="n">myPercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">score</span> <span class="o">/</span> <span class="n">highScore</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
     <span class="c1"># error-proofing the procedure</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">score</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">highScore</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Positive integers only!"</span><span class="p">)</span>
     <span class="k">elif</span> <span class="p">(</span><span class="n">score</span> <span class="o">&gt;</span> <span class="n">highScore</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Your score cannot be higher than the highest score in the class."</span><span class="p">)</span>
-    <span class="c1"># Final goal</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">myPercent</span>
+        <span class="c1"># The actual calculations</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">score</span> <span class="o">/</span> <span class="n">highScore</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
 
 <span class="c1"># Calculates your letter grade after the curve</span>
 <span class="k">def</span> <span class="nf">letterGradeCalculator</span><span class="p">(</span><span class="n">percent</span><span class="p">):</span>
