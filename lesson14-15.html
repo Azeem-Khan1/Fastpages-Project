@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      7 min read
     
 </span></p>
 
@@ -147,6 +147,12 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Homework">Homework </a></li>
+<li class="toc-entry toc-h2"><a href="#Python-Libraries-Hacks">Python Libraries Hacks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#PyGame">PyGame </a></li>
+<li class="toc-entry toc-h3"><a href="#Web2py">Web2py </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -500,9 +506,7 @@ PROCEDURE Dice(n)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># a</span>
-
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="c1"># Define the polynomial as a NumPy array</span>
 <span class="n">poly</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
@@ -546,24 +550,23 @@ PROCEDURE Dice(n)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># b</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="c1"># Define the polynomial using the poly1d class (numerator)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 
-<span class="k">def</span> <span class="nf">calculate_derivative</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">):</span>
-  <span class="c1"># Define the polynomial as a NumPy array</span>
-  <span class="n">poly</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="c1"># Define the polynomial using the poly1d class (denominator)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">2</span><span class="p">])</span>
 
-  <span class="c1"># Compute the derivative of the polynomial</span>
-  <span class="n">derivative</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyder</span><span class="p">(</span><span class="n">poly</span><span class="p">)</span>
+<span class="c1"># Compute the derivative of the polynomial using the deriv function and quotient rule</span>
+<span class="n">derivative</span> <span class="o">=</span> <span class="p">((</span><span class="n">d</span> <span class="o">*</span> <span class="n">n</span><span class="o">.</span><span class="n">deriv</span><span class="p">())</span> <span class="o">-</span> <span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span> <span class="o">*</span> <span class="n">n</span><span class="p">))</span> <span class="o">/</span> <span class="mi">4</span>
 
-  <span class="c1"># Evaluate the derivative at x = 9</span>
-  <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyval</span><span class="p">(</span><span class="n">derivative</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="c1"># Evaluate the derivative at x = 9</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">derivative</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
 
-  <span class="k">return</span> <span class="n">result</span>
 
-<span class="c1"># Test the procedure</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">calculate_derivative</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The derivative of </span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2"> ------"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">is: </span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">derivative</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">When x = 9, the derivative is </span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">result</span><span class="p">)))</span>
 </pre></div>
 
     </div>
@@ -576,7 +579,17 @@ PROCEDURE Dice(n)
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>37980
+<pre>The derivative of 
+    4     2
+13 x + 4 x
+ ------ 
+2
+is: 
+    3
+26 x + 4 x
+
+When x = 9, the derivative is 
+18990
 </pre>
 </div>
 </div>
@@ -594,16 +607,132 @@ PROCEDURE Dice(n)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import the random module</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># Create a list of dogs and cats</span>
+<span class="n">dogs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Dog 1'</span><span class="p">,</span> <span class="s1">'Dog 2'</span><span class="p">,</span> <span class="s1">'Dog 3'</span><span class="p">,</span> <span class="s1">'Dog 4'</span><span class="p">,</span> <span class="s1">'Dog 5'</span><span class="p">,</span> <span class="s1">'Dog 6'</span><span class="p">,</span> <span class="s1">'Dog 7'</span><span class="p">,</span> <span class="s1">'Dog 8'</span><span class="p">,</span> <span class="s1">'Dog 9'</span><span class="p">,</span> <span class="s1">'Dog 10'</span><span class="p">]</span>
+<span class="n">cats</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Cat 1'</span><span class="p">,</span> <span class="s1">'Cat 2'</span><span class="p">,</span> <span class="s1">'Cat 3'</span><span class="p">,</span> <span class="s1">'Cat 4'</span><span class="p">,</span> <span class="s1">'Cat 5'</span><span class="p">,</span> <span class="s1">'Cat 6'</span><span class="p">,</span> <span class="s1">'Cat 7'</span><span class="p">,</span> <span class="s1">'Cat 8'</span><span class="p">,</span> <span class="s1">'Cat 9'</span><span class="p">,</span> <span class="s1">'Cat 10'</span><span class="p">]</span>
+
+<span class="c1"># Create a list of tuples, where each tuple contains an animal and a random number</span>
+<span class="n">animals</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">dog</span> <span class="ow">in</span> <span class="n">dogs</span><span class="p">:</span>
+    <span class="n">animals</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">dog</span><span class="p">,</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)))</span>
+<span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">cats</span><span class="p">:</span>
+    <span class="n">animals</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">cat</span><span class="p">,</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)))</span>
+
+<span class="c1"># Sort the list of tuples based on the random numbers</span>
+<span class="n">animals</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1"># Print the animals in the randomized order</span>
+<span class="k">for</span> <span class="n">animal</span> <span class="ow">in</span> <span class="n">animals</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">animal</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Cat 3
+Dog 1
+Dog 4
+Dog 7
+Dog 6
+Dog 10
+Dog 2
+Cat 7
+Cat 8
+Dog 5
+Cat 5
+Cat 10
+Cat 6
+Cat 4
+Cat 9
+Dog 3
+Cat 1
+Dog 9
+Dog 8
+Cat 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Python-Libraries-Hacks">
+<a class="anchor" href="#Python-Libraries-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python Libraries Hacks<a class="anchor-link" href="#Python-Libraries-Hacks"> </a>
+</h2>
+<h3 id="PyGame">
+<a class="anchor" href="#PyGame" aria-hidden="true"><span class="octicon octicon-link"></span></a>PyGame<a class="anchor-link" href="#PyGame"> </a>
+</h3>
+<ul>
+<li>
+<p>Free and open-source library for making multimedia applications in Python</p>
+</li>
+<li>
+<p>Provides a set of Python modules for writing games, animations, and other graphical programs</p>
+</li>
+<li>
+<p>Built on top of the popular SDL (Simple DirectMedia Layer) library</p>
+</li>
+<li>
+<p>Important for coders because it allows them to easily create graphical programs using Python</p>
+</li>
+<li>
+<p>Useful for people who want to make games, animations, or other types of interactive programs that involve graphics and multimedia</p>
+</li>
+<li>
+<p>It's free with no license required</p>
+</li>
+</ul>
+<h3 id="Web2py">
+<a class="anchor" href="#Web2py" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web2py<a class="anchor-link" href="#Web2py"> </a>
+</h3>
+<ul>
+<li>
+<p>Full-stack web development framework for Python</p>
+</li>
+<li>
+<p>Provides a wide range of features and tools for building and deploying web applications, including a web-based IDE, an object-relational mapper, and a web-based administrative interface</p>
+</li>
+<li>
+<p>Useful because it makes it easy to build and deploy web applications quickly</p>
+</li>
+<li>
+<p>Web-based IDE allows developers to edit, debug, and manage their applications from any web browser, and the object-relational mapper automatically generates the necessary SQL code for working with a database</p>
+</li>
+<li>
+<p>Administrative interface allows developers to easily manage user accounts, access logs, and other administrative tasks</p>
+</li>
+<li>
+<p>Great security features</p>
+<ul>
+<li>
+<p>Includes built-in support for encryption and authentication, and it is designed to prevent common web vulnerabilities such as cross-site scripting and SQL injection attacks</p>
+</li>
+<li>
+<p>Open-source and free to use, making it a good choice for developers who want a powerful, easy-to-use web development framework without having to pay for a license</p>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
 
 
