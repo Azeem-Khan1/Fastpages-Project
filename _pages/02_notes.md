@@ -11,7 +11,7 @@ permalink: /notes/
 - [3.16](https://azeem-khan1.github.io/fastpages-project/lesson16) completed notes and homework
 - Worked on more [vocab](https://azeem-khan1.github.io/fastpages-project/vocabulary) post
 - [3.17 and 3.18](https://azeem-khan1.github.io/fastpages-project/lesson17-18) completed notes and homework
-- Review Ticket with student learning portfolio / Algorithms blog & list of all [grades](https://azeem-khan1.github.io/fastpages-project/week14/homeworkPoints)
+- [Review Ticket](https://github.com/Azeem-Khan1/fastpages-project/issues/17#issue-1495471269) with student learning portfolio / Algorithms blog & list of all [grades](https://azeem-khan1.github.io/fastpages-project/week14/homeworkPoints)
 
 # Week 15
 - More student lessons

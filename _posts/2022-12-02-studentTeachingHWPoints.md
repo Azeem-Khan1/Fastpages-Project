@@ -4,8 +4,8 @@ description: Homework Grades
 toc: true
 comments: true
 layout: post
-permalink: /week14/homeworkPoints
-categories: [week 14]
+permalink: /notesAndHwGrades
+categories: [Student Teaching Portfolio]
 ---
 
 | Lesson | Grade |
