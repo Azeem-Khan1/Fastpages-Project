@@ -5,6 +5,22 @@ toc: true
 permalink: /notes/
 ---
 
+# Week 16
+- Completed [grading](https://azeem-khan1.github.io/TripleAJ/grades) 3.9 and 3.11 homework
+- [3.14 and 3.15](https://azeem-khan1.github.io/fastpages-project/lesson14-15) completed notes and homework
+- [3.16](https://azeem-khan1.github.io/fastpages-project/lesson16) completed notes and homework
+- Worked on more [vocab](https://azeem-khan1.github.io/fastpages-project/vocabulary) post
+- [3.17 and 3.18](https://azeem-khan1.github.io/fastpages-project/lesson17-18) completed notes and homework
+- Review Ticket with student learning portfolio / Algorithms blog & list of all [grades](https://azeem-khan1.github.io/fastpages-project/week14/homeworkPoints)
+
+# Week 15
+- More student lessons
+  - [3.8 and 3.10](https://azeem-khan1.github.io/fastpages-project/lesson8-10) completed notes and homework
+  - 3.9 and 3.11 [presented](https://azeem-khan1.github.io/TripleAJ/Lesson) on Wednesday
+  - [3.12 and 3.13](https://azeem-khan1.github.io/fastpages-project/lesson12-13) completed notes and homework
+  - Started [vocab](https://azeem-khan1.github.io/fastpages-project/vocabulary) post
+
+
 # Week 14
 - Worked on student lesson plan for 3.9 and 3.11
 - [3.1 & 3.2 Student Teaching](https://azeem-khan1.github.io/fastpages-project/lesson1-2)
