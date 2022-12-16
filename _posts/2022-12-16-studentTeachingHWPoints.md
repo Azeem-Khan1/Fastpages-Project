@@ -15,8 +15,8 @@ categories: [Student Teaching Portfolio]
 | 3.5 - 3.7 | 1/1 |
 | 3.8 & 3.10 | 1/1 |
 | 3.9 & 3.11 Presentation | 3.3/4 |
-| 3.9 & 3.11 Grading | Not Posted |
+| 3.9 & 3.11 Grading | 2.9/3 |
 | 3.12 & 3.13 | 1/1 |
 | 3.14 & 3.15 | 0.95/1 |
-| 3.16 | Not Posted |
+| 3.16 | 0.8/1 |
 | 3.17 & 3.18 | Not Posted |
