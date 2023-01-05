@@ -5,6 +5,11 @@ toc: true
 permalink: /notes/
 ---
 
+# Week 17
+- Created a [repo](https://github.com/Azeem-Khan1/TripleAJv2) from Mr. Mort's template for the Create Performance Task
+  - Got it to run locally through Ruby and Bundle
+- Worked on an Agile Manifesto for our group
+
 # Week 16
 - Completed [grading](https://azeem-khan1.github.io/TripleAJ/grades) 3.9 and 3.11 homework
 - [3.14 and 3.15](https://azeem-khan1.github.io/fastpages-project/lesson14-15) completed notes and homework
