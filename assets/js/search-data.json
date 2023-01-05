@@ -544,7 +544,7 @@
   
       ,"page5": {
           "title": "Submenu",
-          "content": "| Python Kernel | Bash Kernel | Javascript Kernel | Javascript Table | About Me | Contributions | Notes | Tags (Look for hacks) | Personal API Hacks | .",
+          "content": "| Python Kernel | Bash Kernel | Javascript Kernel | Javascript Table | About Me | Contributions | Notes | Tags (Sorted by week) | .",
           "url": "https://azeem-khan1.github.io/fastpages-project/submenu/",
           "relUrl": "/submenu/",
           "date": ""
