@@ -8,6 +8,7 @@ permalink: /gratitudelist/
 # Week 4 Hack
 
 Things I'm grateful for:
+- Good health + youth
 - Family
 - Friends
 - Financial stability
@@ -16,3 +17,4 @@ Things I'm grateful for:
 - Freedom & human rights
 - Music
 - Technology (phone, laptop, headphones, speakers, TV, etc...)
+- My CAR <3
