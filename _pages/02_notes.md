@@ -6,7 +6,7 @@ permalink: /notes/
 ---
 
 # Week 17
-- Created a [repo](https://github.com/Azeem-Khan1/TripleAJv2) from Mr. Mort's template for the Create Performance Task
+- Created a [repo](https://github.com/Azeem-Khan1/TripleAJv2) from Mr. Mort's template for the [Create Performance Task](https://azeem-khan1.github.io/TripleAJv2/)
   - Got it to run locally through Ruby and Bundle
 - Worked on an Agile Manifesto for our group
 
