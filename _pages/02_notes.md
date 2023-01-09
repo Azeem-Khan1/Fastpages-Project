@@ -9,6 +9,13 @@ permalink: /notes/
 - Created a [repo](https://github.com/Azeem-Khan1/TripleAJv2) from Mr. Mort's template for the [Create Performance Task](https://azeem-khan1.github.io/TripleAJv2/)
   - Got it to run locally through Ruby and Bundle
 - Worked on an Agile Manifesto for our group
+- Customized template to fit our CPT idea
+- Individual team member pages outline roles
+- Rubric page shows how idea fits CPT criteria
+- Developed idea of IPO Calendar
+- Developed general UI design of calendar
+- Came up with API ideas for accurate information about IPOs (Using AI maybe?)
+- Week 17 individual hacks [(Performance task scoring 1)](https://azeem-khan1.github.io/fastpages-project/week17/PTScoring)
 
 # Week 16
 - Completed [grading](https://azeem-khan1.github.io/TripleAJ/grades) 3.9 and 3.11 homework
