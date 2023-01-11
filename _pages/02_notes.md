@@ -5,6 +5,11 @@ toc: true
 permalink: /notes/
 ---
 
+# Week 18
+- Monday: live review (2.7/3)
+- [Performance Task Scoring 2](https://azeem-khan1.github.io/fastpages-project/week18/PTScoring2)
+
+
 # Week 17
 - Created a [repo](https://github.com/Azeem-Khan1/TripleAJv2) from Mr. Mort's template for the [Create Performance Task](https://azeem-khan1.github.io/TripleAJv2/)
   - Got it to run locally through Ruby and Bundle
