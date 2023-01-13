@@ -8,6 +8,11 @@ permalink: /notes/
 # Week 18
 - Monday: live review (2.7/3)
 - [Performance Task Scoring 2](https://azeem-khan1.github.io/fastpages-project/week18/PTScoring2)
+- New idea for CPT (virtual arcade)
+  - New site [here](https://azeem-khan1.github.io/TripleAJv3)
+    - [repo](https://github.com/Azeem-Khan1/TripleAJv3)
+- Object Oriented Programming [PBL & hacks](https://azeem-khan1.github.io/fastpages-project/week18/PBLmodel)
+- Frontend inputs + view [PBL & hacks](https://azeem-khan1.github.io/fastpages-project/week18/PBLview)
 
 
 # Week 17
