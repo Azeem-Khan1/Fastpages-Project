@@ -5,6 +5,101 @@ toc: true
 permalink: /notes/
 ---
 
+# Week 36
+
+
+
+# Week 35
+
+
+
+# Week 34
+
+
+
+# Week 33
+
+
+
+# Week 32
+
+
+
+# Week 31
+
+
+
+# Week 30
+
+
+
+# Week 29
+
+
+
+# Week 28
+
+
+
+# Week 27
+
+
+
+# Week 26
+
+
+
+# Week 25
+- 2.2 Data Compression and Image Lab [hacks]()
+- 2.3 Extracting Information from Data [hacks]()
+- [MCQ Test #3 Corrections](https://azeem-khan1.github.io/fastpages-project/week24/tri2finalblog)
+
+
+# Week 24
+- Crossover Reviews for final project
+- [Team Review Ticket](https://github.com/Azeem-Khan1/TripleAJv3/issues/20#issue-1600234576) has everything!
+- Completed MCQ Final for CollegeBoard (46/50)
+
+
+# Week 23
+- Night at the Museum!!
+- Presented to Mr. Mortensen
+- Saw many other peoples' projects
+- Completed [N@TM Blog](https://azeem-khan1.github.io/fastpages-project/week22/N@tMtri2)
+- Completed many issues in our group repo for TripleAJ
+- More work days
+
+
+# Week 22
+- Scrum Master review for team progress from week 21
+- Individual review for 5.3 and 5.4 from week 21
+- AP Unit [5.5](https://azeem-khan1.github.io/fastpages-project/week20/unit5#55) and [5.6](https://azeem-khan1.github.io/fastpages-project/week20/unit5#56)
+- More work days (Almost done with finalizing games and started CI/CD)
+- Deployed [Backend](https://ajarcade.duckdns.org) on Flask with AWS and Docker
+
+
+# Week 21
+- Scrum Master review on MCQ and 5.1 & 5.2
+- AP Unit [5.3](https://azeem-khan1.github.io/fastpages-project/week20/unit5#53) and [5.4](https://azeem-khan1.github.io/fastpages-project/week20/unit5#54)
+- Work days (we didn't really get anything done, but progress was made on games)
+
+
+# Week 20
+- Live/Silent review on review ticket from Week 19
+- CollegeBoard MCQ midterm
+- AP Unit [5.1](https://azeem-khan1.github.io/fastpages-project/week20/unit5#51) and [5.2](https://azeem-khan1.github.io/fastpages-project/week20/unit5#52)
+- Presented project to class with ideation, etc...
+
+
+# Week 19
+- Monday: silent review on API and Database
+- Database/model tech talk
+- API/Control teck talk
+- Made videos for hacks
+- Performance Task Scoring 3 (found below)
+- [Review Ticket](https://github.com/Azeem-Khan1/fastpages-project/issues/22#issue-1552733128)
+
+
 # Week 18
 - Monday: live review (2.7/3)
 - [Performance Task Scoring 2](https://azeem-khan1.github.io/fastpages-project/week18/PTScoring2)
