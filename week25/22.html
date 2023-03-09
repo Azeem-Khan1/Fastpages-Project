@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      14 min read
     
 </span></p>
 
@@ -110,9 +110,9 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Reading-and-Encoding-Images-(2-implementations-follow)">Reading and Encoding Images (2 implementations follow) </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#PIL-(Python-Image-Library)">PIL (Python Image Library) </a></li>
-<li class="toc-entry toc-h3"><a href="#base64">base64 </a></li>
 <li class="toc-entry toc-h3"><a href="#numpy">numpy </a></li>
 <li class="toc-entry toc-h3"><a href="#io,-BytesIO">io, BytesIO </a></li>
+<li class="toc-entry toc-h3"><a href="#base64">base64 </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Data-Structures,-Imperative-Programming-Style,-and-working-with-Images">Data Structures, Imperative Programming Style, and working with Images </a></li>
@@ -325,17 +325,6 @@ ll and ls don't work in Command Prompt, but do work in Windows Powershell. On Co
 <blockquote>
 <p><a href="https://pillow.readthedocs.io/en/stable/">Pillow or PIL</a> provides the ability to work with images in Python.  <a href="https://www.geeksforgeeks.org/working-images-python/?ref=lbp">Geeks for Geeks</a> shows some ideas on working with images.</p>
 </blockquote>
-<h3 id="base64">
-<a class="anchor" href="#base64" aria-hidden="true"><span class="octicon octicon-link"></span></a>base64<a class="anchor-link" href="#base64"> </a>
-</h3>
-<blockquote>
-<p>Image formats (JPG, PNG) are often called <strong>*Binary File formats</strong>, it is difficult to pass these over HTTP.   Thus, <a href="https://en.wikipedia.org/wiki/Base64">base64</a> converts binary encoded data (8-bit, ASCII/Unicode) into a text encoded scheme (24 bits, 6-bit Base64 digits).  Thus base64 is used to transport and embed binary images into textual assets such as HTML and CSS.- How is Base64 similar or different to Binary and Hexadecimal?
-Base64 is similar to Binary and Hexadecimal because it's a way to store data using a unique string of characters. It's different because there are many more characters to choose from for each bit.</p>
-<ul>
-<li>Translate first 3 letters of your name to Base64.
-See the code block below. The first three letters of my name translate to QXpl. My full name converted to Base64 is QXplZW0=.</li>
-</ul>
-</blockquote>
 <h3 id="numpy">
 <a class="anchor" href="#numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>numpy<a class="anchor-link" href="#numpy"> </a>
 </h3>
@@ -356,6 +345,17 @@ It's pretty annoying if you're impatient. The video quality suffers.</li>
 Image quality may be sacrificed to lower buffer time.</li>
 </ul>
 </blockquote>
+<h3 id="base64">
+<a class="anchor" href="#base64" aria-hidden="true"><span class="octicon octicon-link"></span></a>base64<a class="anchor-link" href="#base64"> </a>
+</h3>
+<blockquote>
+<p>Image formats (JPG, PNG) are often called <strong>*Binary File formats</strong>, it is difficult to pass these over HTTP.   Thus, <a href="https://en.wikipedia.org/wiki/Base64">base64</a> converts binary encoded data (8-bit, ASCII/Unicode) into a text encoded scheme (24 bits, 6-bit Base64 digits).  Thus base64 is used to transport and embed binary images into textual assets such as HTML and CSS.- How is Base64 similar or different to Binary and Hexadecimal?
+Base64 is similar to Binary and Hexadecimal because it's a way to store data using a unique string of characters. It's different because there are many more characters to choose from for each bit.</p>
+<ul>
+<li>Translate first 3 letters of your name to Base64.
+See the code block below.</li>
+</ul>
+</blockquote>
 
 </div>
 </div>
@@ -367,26 +367,18 @@ Image quality may be sacrificed to lower buffer time.</li>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TRANSLATION TO BASE64</span>
-<span class="kn">import</span> <span class="nn">base64</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">base64</span>
 
-<span class="n">name</span> <span class="o">=</span> <span class="s2">"Aze"</span> <span class="c1"># the string to be encoded</span>
-<span class="n">name_full</span> <span class="o">=</span> <span class="s2">"Azeem"</span>
+<span class="c1"># TRANSLATION TO BASE64 FROM ALPHANUMERIC</span>
+<span class="k">def</span> <span class="nf">translateAN</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="c1"># convert the string to bytes</span>
+    <span class="n">name_bytes</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">)</span>
+    <span class="c1"># encode the bytes using Base64</span>
+    <span class="n">base64_bytes</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">name_bytes</span><span class="p">)</span>
+    <span class="c1"># convert the Base64 bytes back to a string</span>
+    <span class="k">return</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">" -&gt; "</span> <span class="o">+</span> <span class="n">base64_bytes</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">)</span>
 
-<span class="c1"># convert the string to bytes</span>
-<span class="n">name_bytes</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">)</span>
-<span class="n">name_full_bytes</span> <span class="o">=</span> <span class="n">name_full</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">)</span>
-
-<span class="c1"># encode the bytes using Base64</span>
-<span class="n">base64_bytes</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">name_bytes</span><span class="p">)</span>
-<span class="n">base64_full_bytes</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">name_full_bytes</span><span class="p">)</span>
-
-<span class="c1"># convert the Base64 bytes back to a string</span>
-<span class="n">base64_string</span> <span class="o">=</span> <span class="n">base64_bytes</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">)</span>
-<span class="n">base64_full_string</span> <span class="o">=</span> <span class="n">base64_full_bytes</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Aze -&gt; "</span> <span class="o">+</span> <span class="n">base64_string</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Azeem -&gt; "</span> <span class="o">+</span> <span class="n">base64_full_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Translating from Alphanumeric to Base64: </span><span class="se">\n</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">translateAN</span><span class="p">(</span><span class="s2">"Aze"</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">translateAN</span><span class="p">(</span><span class="s2">"Azeem"</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">translateAN</span><span class="p">(</span><span class="s2">"Azeem Khan"</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -399,8 +391,57 @@ Image quality may be sacrificed to lower buffer time.</li>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Aze -&gt; QXpl
+<pre>Translating from Alphanumeric to Base64: 
+ 
+Aze -&gt; QXpl
 Azeem -&gt; QXplZW0=
+Azeem Khan -&gt; QXplZW0gS2hhbg==
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">base64</span>
+
+<span class="c1"># TRANSLATION TO ALPHANUMERIC FROM BASE64</span>
+<span class="k">def</span> <span class="nf">translateB64</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="c1"># convert the string to bytes</span>
+    <span class="n">name_bytes</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">)</span>
+    <span class="c1"># decode the bytes using Base64</span>
+    <span class="n">base64_bytes</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">name_bytes</span><span class="p">)</span>
+    <span class="c1"># convert the Base64 bytes back to a string</span>
+    <span class="k">return</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">" -&gt; "</span> <span class="o">+</span> <span class="n">base64_bytes</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Translating from Base64 to Alphanumeric: </span><span class="se">\n</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">translateB64</span><span class="p">(</span><span class="s1">'QXpl'</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">translateB64</span><span class="p">(</span><span class="s2">"QXplZW0="</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">translateB64</span><span class="p">(</span><span class="s2">"QXplZW0gS2hhbg=="</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Translating from Base64 to Alphanumeric: 
+ 
+QXpl -&gt; Aze
+QXplZW0= -&gt; Azeem
+QXplZW0gS2hhbg== -&gt; Azeem Khan
 </pre>
 </div>
 </div>
@@ -420,10 +461,14 @@ Azeem -&gt; QXplZW0=
 <blockquote>
 <p>Introduction to creating meta data and manipulating images.  Look at each procedure and explain the the purpose and results of this program.  Add any insights or challenges as you explored this program.</p>
 <ul>
-<li>Does this code seem like a series of steps are being performed?</li>
-<li>Describe Grey Scale algorithm in English or Pseudo code?</li>
-<li>Describe scale image?  What is before and after on pixels in three images?</li>
-<li>Is scale image a type of compression?  If so, line it up with College Board terms described?</li>
+<li>Does this code seem like a series of steps are being performed?
+Yes, it is called an Imperative program</li>
+<li>Describe Grey Scale algorithm in English or Pseudo code?
+It turns a colored image to a de-saturated image. It takes color information from each pixel and converts it to a shade of grey, depending on the luminance of the color of the pixel. </li>
+<li>Describe scale image?  What is before and after on pixels in three images?
+Scaling an image changes the size and pixel density of it. For example, upscaling usually causes quality loss because a high density of pixels is being blown out to a larger dimension, or less density.</li>
+<li>Is scale image a type of compression?  If so, line it up with College Board terms described?
+Yes, scaling an image can be considered a form of lossy compression as it reduces the file size by decreasing the number of pixels, which is similar to the College Board term "data compression."</li>
 </ul>
 </blockquote>
 
@@ -740,9 +785,18 @@ Scaled size:  (320, 320)
 <a class="anchor" href="#Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-..." aria-hidden="true"><span class="octicon octicon-link"></span></a>Additionally, review all the imports in these three demos.  Create a definition of their purpose, specifically these ...<a class="anchor-link" href="#Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-..."> </a>
 </h2>
 <ul>
-<li>PIL</li>
-<li>numpy</li>
-<li>base64</li>
+<li>PIL<blockquote>
+<p>An image manipulation library. In this code, it is used to access an image from a source</p>
+</blockquote>
+</li>
+<li>numpy<blockquote>
+<p>Lets you manipulate and analyze objects. In this case, it is used to grayscale the image(s) in a loop as it manipulates the RGB value of each pixel.</p>
+</blockquote>
+</li>
+<li>base64<blockquote>
+<p>Is a character system used to encode images as strings. That is how it is being used in this code as well.</p>
+</blockquote>
+</li>
 </ul>
 
 </div>
