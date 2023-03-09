@@ -540,8 +540,8 @@ Student ID  GPA
 
 <span class="c1">#the data can be stored as a python dictionary</span>
 <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">"calories"</span><span class="p">:</span> <span class="p">[</span><span class="mi">420</span><span class="p">,</span> <span class="mi">380</span><span class="p">,</span> <span class="mi">390</span><span class="p">],</span>
-  <span class="s2">"duration"</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">]</span>
+  <span class="s2">"calories"</span><span class="p">:</span> <span class="p">[</span><span class="mi">420</span><span class="p">,</span> <span class="mi">380</span><span class="p">,</span> <span class="mi">390</span><span class="p">,</span> <span class="mi">410</span><span class="p">],</span>
+  <span class="s2">"duration"</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">38</span><span class="p">]</span>
 <span class="p">}</span>
 <span class="c1">#stores the data in a data frame</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"-------------Dict_to_DF------------------"</span><span class="p">)</span>
@@ -551,7 +551,7 @@ Student ID  GPA
 <span class="nb">print</span><span class="p">(</span><span class="s2">"----------Dict_to_DF_labels--------------"</span><span class="p">)</span>
 
 <span class="c1">#or with the index argument, you can label rows.</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"day1"</span><span class="p">,</span> <span class="s2">"day2"</span><span class="p">,</span> <span class="s2">"day3"</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"day1"</span><span class="p">,</span> <span class="s2">"day2"</span><span class="p">,</span> <span class="s2">"day3"</span><span class="p">,</span> <span class="s2">"day4"</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
@@ -570,11 +570,13 @@ Student ID  GPA
 0       420        50
 1       380        40
 2       390        45
+3       410        38
 ----------Dict_to_DF_labels--------------
       calories  duration
 day1       420        50
 day2       380        40
 day3       390        45
+day4       410        38
 </pre>
 </div>
 </div>
@@ -711,10 +713,10 @@ None
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'files/data.csv'</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'Duration'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"--Duration Top 10---------"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"--Duration Bottom 10------"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -734,13 +736,13 @@ None
 109       210    137       184    1860.4
 60        210    108       160    1376.0
 106       180     90       120     800.3
-90        180    101       127     600.1
-65        180     90       130     800.4
-61        160    110       137    1034.4
-62        160    109       135     853.0
-67        150    107       130     816.0
 --Duration Bottom 10------
      Duration  Pulse  Maxpulse  Calories
+92         30     90       107     105.3
+96         30     95       128     128.2
+159        30     80       120     240.9
+97         25    152       168     244.2
+58         20    153       172     226.4
 68         20    106       136     110.4
 100        20     95       112      77.7
 89         20     83       107      50.3
@@ -797,7 +799,7 @@ None
 
     <span class="c1"># filter data for requirement</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">json</span><span class="p">[</span><span class="s1">'countries_stat'</span><span class="p">])</span>  <span class="c1"># filter endpoint for country stats</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="s1">'country_name'</span><span class="p">:</span><span class="s1">'deaths'</span><span class="p">])</span> <span class="c1"># show row 0 through 5 and columns country_name through deaths</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s1">'country_name'</span><span class="p">:</span><span class="s1">'deaths'</span><span class="p">])</span> <span class="c1"># show row 0 through 5 and columns country_name through deaths</span>
     
 <span class="n">fetch</span><span class="p">()</span>
 </pre></div>
@@ -818,7 +820,6 @@ None
 2       Brazil  30,345,654    662,663
 3       France  28,244,977    145,020
 4      Germany  24,109,433    134,624
-5           UK  21,933,206    173,352
 </pre>
 </div>
 </div>
