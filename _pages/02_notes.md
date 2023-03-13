@@ -50,8 +50,8 @@ permalink: /notes/
 
 
 # Week 25
-- 2.2 Data Compression and Image Lab [hacks]()
-- 2.3 Extracting Information from Data [hacks]()
+- 2.2 Data Compression and Image Lab [blog & hacks](https://azeem-khan1.github.io/fastpages-project/unit2/2)
+- 2.3 Extracting Information from Data [blog & hacks](https://azeem-khan1.github.io/fastpages-project/unit2/3)
 - [MCQ Test #3 Corrections](https://azeem-khan1.github.io/fastpages-project/week24/tri2finalblog)
 
 
