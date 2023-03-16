@@ -1135,7 +1135,7 @@ Created new player Magic Johnson
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Created
- {'id': 5, 'name': 'Azeem Khan', 'points': 20, 'assists': 13, 'rebounds': 10}
+ {'id': 5, 'name': 'Azeem Khan', 'points': 22, 'assists': 18, 'rebounds': 10}
 </pre>
 </div>
 </div>
@@ -1165,8 +1165,8 @@ Created new player Magic Johnson
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
         <span class="n">table</span> <span class="o">=</span> <span class="n">Player</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-    <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">player</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span> <span class="c1"># "List Comprehensions", for each user add user.read() to list</span>
-    <span class="k">return</span> <span class="n">json_ready</span>
+    <span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">table</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
 
 <span class="n">read</span><span class="p">()</span>
 </pre></div>
@@ -1180,24 +1180,14 @@ Created new player Magic Johnson
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[{'id': 1, 'name': 'Stephen Curry', 'points': 25, 'assists': 7, 'rebounds': 5},
- {'id': 2, 'name': 'LeBron James', 'points': 27, 'assists': 7, 'rebounds': 8},
- {'id': 3,
-  'name': 'Michael Jordan',
-  'points': 30,
-  'assists': 5,
-  'rebounds': 6},
- {'id': 4,
-  'name': 'Magic Johnson',
-  'points': 19,
-  'assists': 11,
-  'rebounds': 7},
- {'id': 5, 'name': 'Azeem Khan', 'points': 20, 'assists': 13, 'rebounds': 10}]</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"id": 1, "name": "Stephen Curry", "points": 25, "assists": 7, "rebounds": 5}
+{"id": 2, "name": "LeBron James", "points": 27, "assists": 7, "rebounds": 8}
+{"id": 3, "name": "Michael Jordan", "points": 30, "assists": 5, "rebounds": 6}
+{"id": 4, "name": "Magic Johnson", "points": 19, "assists": 11, "rebounds": 7}
+{"id": 5, "name": "Azeem Khan", "points": 22, "assists": 18, "rebounds": 10}
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -1233,11 +1223,10 @@ Created new player Magic Johnson
     <span class="p">}</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'data'</span><span class="p">)</span> <span class="c1"># get what needs to be updated</span>
     <span class="n">player</span> <span class="o">=</span> <span class="n">find_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="c1"># get the player (using the name in this case)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
         <span class="n">player</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
         <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span> <span class="c1"># save the changes to the database</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">player</span><span class="si">}</span><span class="s2"> Updated"</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> at id </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2"> has been updated"</span>
 
 <span class="n">put</span><span class="p">()</span>
 </pre></div>
@@ -1252,9 +1241,8 @@ Created new player Magic Johnson
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>5
-Before update: {'id': 5, 'name': 'Azeem Khan', 'points': 20, 'assists': 13, 'rebounds': 10}
-After update: {'id': 5, 'name': 'Azeem Khan', 'points': 23, 'assists': 32, 'rebounds': 33}
+<pre>Before update: {'id': 5, 'name': 'Azeem Khan', 'points': 27, 'assists': 23, 'rebounds': 13}
+After update: {'id': 5, 'name': 'Azeem Khan', 'points': 25, 'assists': 22, 'rebounds': 17}
 </pre>
 </div>
 </div>
@@ -1264,7 +1252,7 @@ After update: {'id': 5, 'name': 'Azeem Khan', 'points': 23, 'assists': 32, 'rebo
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>'{"id": 5, "name": "Azeem Khan", "points": 23, "assists": 32, "rebounds": 33} Updated'</pre>
+<pre>'Azeem Khan at id 5 has been updated'</pre>
 </div>
 
 </div>
@@ -1303,24 +1291,14 @@ After update: {'id': 5, 'name': 'Azeem Khan', 'points': 23, 'assists': 32, 'rebo
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[{'id': 1, 'name': 'Stephen Curry', 'points': 25, 'assists': 7, 'rebounds': 5},
- {'id': 2, 'name': 'LeBron James', 'points': 27, 'assists': 7, 'rebounds': 8},
- {'id': 3,
-  'name': 'Michael Jordan',
-  'points': 30,
-  'assists': 5,
-  'rebounds': 6},
- {'id': 4,
-  'name': 'Magic Johnson',
-  'points': 19,
-  'assists': 11,
-  'rebounds': 7},
- {'id': 5, 'name': 'Azeem Khan', 'points': 23, 'assists': 32, 'rebounds': 33}]</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"id": 1, "name": "Stephen Curry", "points": 25, "assists": 7, "rebounds": 5}
+{"id": 2, "name": "LeBron James", "points": 27, "assists": 7, "rebounds": 8}
+{"id": 3, "name": "Michael Jordan", "points": 30, "assists": 5, "rebounds": 6}
+{"id": 4, "name": "Magic Johnson", "points": 19, "assists": 11, "rebounds": 7}
+{"id": 5, "name": "Azeem Khan", "points": 25, "assists": 22, "rebounds": 17}
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -1350,7 +1328,7 @@ After update: {'id': 5, 'name': 'Azeem Khan', 'points': 23, 'assists': 32, 'rebo
         <span class="n">name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your player name"</span><span class="p">))</span>
         <span class="n">player</span> <span class="o">=</span> <span class="n">find_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
         <span class="n">player</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">player</span><span class="si">}</span><span class="s2"> has been deleted"</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> at id </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2"> has been deleted"</span>
 
 <span class="n">delete</span><span class="p">()</span>
 </pre></div>
@@ -1367,7 +1345,7 @@ After update: {'id': 5, 'name': 'Azeem Khan', 'points': 23, 'assists': 32, 'rebo
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>'{"id": 5, "name": "Azeem Khan", "points": 23, "assists": 32, "rebounds": 33} has been deleted'</pre>
+<pre>'Azeem Khan at id 5 has been deleted'</pre>
 </div>
 
 </div>
@@ -1406,23 +1384,13 @@ After update: {'id': 5, 'name': 'Azeem Khan', 'points': 23, 'assists': 32, 'rebo
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[{'id': 1, 'name': 'Stephen Curry', 'points': 25, 'assists': 7, 'rebounds': 5},
- {'id': 2, 'name': 'LeBron James', 'points': 27, 'assists': 7, 'rebounds': 8},
- {'id': 3,
-  'name': 'Michael Jordan',
-  'points': 30,
-  'assists': 5,
-  'rebounds': 6},
- {'id': 4,
-  'name': 'Magic Johnson',
-  'points': 19,
-  'assists': 11,
-  'rebounds': 7}]</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"id": 1, "name": "Stephen Curry", "points": 25, "assists": 7, "rebounds": 5}
+{"id": 2, "name": "LeBron James", "points": 27, "assists": 7, "rebounds": 8}
+{"id": 3, "name": "Michael Jordan", "points": 30, "assists": 5, "rebounds": 6}
+{"id": 4, "name": "Magic Johnson", "points": 19, "assists": 11, "rebounds": 7}
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -1450,7 +1418,8 @@ After update: {'id': 5, 'name': 'Azeem Khan', 'points': 23, 'assists': 32, 'rebo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clear</span><span class="p">():</span>
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
         <span class="n">table</span> <span class="o">=</span> <span class="n">Player</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-        <span class="n">delete</span> <span class="o">=</span> <span class="p">[</span><span class="n">player</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span> <span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">table</span><span class="p">:</span>
+            <span class="n">player</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
     <span class="k">return</span> <span class="s2">"Cleared the database."</span>
 
 <span class="n">clear</span><span class="p">()</span>
@@ -1502,25 +1471,19 @@ After update: {'id': 5, 'name': 'Azeem Khan', 'points': 23, 'assists': 32, 'rebo
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote>
+<p>nothing shows up</p>
+</blockquote>
+
+</div>
+</div>
+</div>
 </div>
 
 
