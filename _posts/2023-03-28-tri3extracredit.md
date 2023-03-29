@@ -1,6 +1,6 @@
 ---
-title: Tri 2 Extra Credit
-description: Tri 2 Extra Credit Lecture notes from CSUSM reps
+title: Tri 3 Extra Credit (CSUSM Guest Speaker Lecture)
+description: Tri 3 Extra Credit Lecture notes from CSUSM reps
 toc: true
 comments: true
 layout: post
