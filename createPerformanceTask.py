@@ -69,13 +69,6 @@ def encode_morse(text):
             print(f'Cannot encode {letter}. Please try something different.')
     return encoded
 
-
-# Prints the encoded morse as a string
-def print_morse(text):
-    pretty = ' '.join(encode_morse(text))
-    print(pretty)
-    return
-
 # Morse code decoding
 def decode_morse(morse):
     decoded = []
@@ -96,8 +89,6 @@ def decode_morse(morse):
         return 'Error encountered while decoding. Please check characters and try again.'
     else:
         return ''.join(decoded[:-1])
-
-
 
 def menu():
     options = [

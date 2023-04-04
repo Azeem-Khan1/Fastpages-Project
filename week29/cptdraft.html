@@ -193,13 +193,6 @@ window.onload = wrap_img;
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Cannot encode </span><span class="si">{</span><span class="n">letter</span><span class="si">}</span><span class="s1">. Please try something different.'</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">encoded</span>
 
-
-<span class="c1"># Prints the encoded morse as a string</span>
-<span class="k">def</span> <span class="nf">print_morse</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-    <span class="n">pretty</span> <span class="o">=</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">encode_morse</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">pretty</span><span class="p">)</span>
-    <span class="k">return</span>
-
 <span class="c1"># Morse code decoding</span>
 <span class="k">def</span> <span class="nf">decode_morse</span><span class="p">(</span><span class="n">morse</span><span class="p">):</span>
     <span class="n">decoded</span> <span class="o">=</span> <span class="p">[]</span>
@@ -220,8 +213,6 @@ window.onload = wrap_img;
         <span class="k">return</span> <span class="s1">'Error encountered while decoding. Please check characters and try again.'</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">decoded</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-
-
 
 <span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
     <span class="n">options</span> <span class="o">=</span> <span class="p">[</span>
