@@ -97,6 +97,7 @@ def menu():
         ('3', 'Translate text to Morse Code and back')
     ]
 
+    print('Options:')
     for option in options:
         print(f'({option[0]}) {option[1]}')
     
