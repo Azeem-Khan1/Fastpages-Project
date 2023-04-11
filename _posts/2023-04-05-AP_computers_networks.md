@@ -106,7 +106,9 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - HTTP is a protocol used by the world wide web
     - The world wide web uses the internet
 
-- Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
+- Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
+
+> Done as trio: Azeem Khan, Nathan Capule, Toby Leeder
 
 ![diagram](https://user-images.githubusercontent.com/111464932/230666258-e8579092-febb-45f2-ae8c-e9b23ce5581f.png)
 
@@ -144,12 +146,25 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+> Redundant - More than one path to a device.
+
+> Fault tolerance is when there is more than one path to each device in a network because it offers a "backup" option of something in the network goes down.
+
+> Need redundancy for fault tolerance.
+
+> Scalability is the ability to increase or decrease the number of devices in a network while maintaining its fault tolerance.
+
+Practice Questions:
+
+1. C)
+2. A)
+
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
 - What is naturally Distributed in Frontend/Backend architecture? 
->  
+> The computing is naturally distributed in a frontend/backend architecture as both sides are typically located on different physical machines. This allows for better scalability, fault-tolerance, and performance, as each component can be scaled independently to handle the workload.
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
 
