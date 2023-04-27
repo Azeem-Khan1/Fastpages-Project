@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      27 min read
+      28 min read
     
 </span></p>
 
@@ -4423,12 +4423,94 @@ Number of red: 150
 <li>Create a simulation that uses iteration and some form of data collection (list, dictionary...) (0.4)<ul>
 <li>try creating quantative data and using the Matplotlib library to display said data </li>
 <li>Comment and describe function of each parts</li>
-<li>How does your simulation help solve/mimic a real world problem?</li>
-<li>Is there any bias in your simulation? Meaning, are there any discrepancies between your program and the real event?</li>
 </ul>
 </li>
 </ol>
 </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plant growth simulation</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Variables for the simulation</span>
+<span class="n">growth_rate</span> <span class="o">=</span> <span class="mf">1.4</span>
+<span class="n">initial_height</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">days_to_simulate</span> <span class="o">=</span> <span class="mi">14</span>
+
+<span class="c1"># Empty list to store the plant's height over time</span>
+<span class="n">heights</span> <span class="o">=</span> <span class="p">[</span><span class="n">initial_height</span><span class="p">]</span>
+
+<span class="c1"># Simulate the growth of the plant over time</span>
+<span class="k">for</span> <span class="n">day</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">days_to_simulate</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Calculate plant's height on this day</span>
+    <span class="n">new_height</span> <span class="o">=</span> <span class="n">heights</span><span class="p">[</span><span class="n">day</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">growth_rate</span>
+    
+    <span class="c1"># Add the new height to the list of heights</span>
+    <span class="n">heights</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_height</span><span class="p">)</span>
+
+<span class="c1"># Plot the plant's growth over time</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">days_to_simulate</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">heights</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Plant Growth Over Time"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Days"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Height (in.)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>How does your simulation help solve/mimic a real world problem?<blockquote>
+<p>This simulation can help us understand how plants grow and develop over time, and can be used to study the effects of different growth rates, environmental conditions, and other factors on plant growth.</p>
+</blockquote>
+</li>
+<li>Is there any bias in your simulation? Meaning, are there any discrepancies between your program and the real event?<blockquote>
+<p>One potential bias in this simulation is that it assumes a constant growth rate over time, which may not be the case in real life.</p>
+</blockquote>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>
 <p>Answer these <a href="https://shruthim0.github.io/canada/2023/04/03/simulationsplanning2.html">simulation questions</a> (0.3)</p>
 <blockquote>
