@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      14 min read
+      15 min read
     
 </span></p>
 
@@ -127,8 +127,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Installing-Scripts-Lesson">Installing Scripts Lesson </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#For-Windows">For Windows </a></li>
-<li class="toc-entry toc-h3"><a href="#Proof-of-Conda">Proof of Conda </a></li>
 <li class="toc-entry toc-h3"><a href="#For-MacOS">For MacOS </a></li>
+<li class="toc-entry toc-h3"><a href="#Proof-of-Conda-(Hack)">Proof of Conda (Hack) </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Setting-up-GitHub-Pages-with-FastPages-Features">Setting up GitHub Pages with FastPages Features </a></li>
@@ -190,29 +190,12 @@ window.onload = wrap_img;
 
 </div>
 </div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">PS</span> <span class="nx">C</span><span class="o">:</span><span class="err">\</span><span class="nx">Users</span><span class="err">\</span><span class="nx">UserName</span><span class="o">&gt;</span> <span class="nx">wsl</span>  <span class="err">#</span> <span class="nx">Windows</span> <span class="nx">prompt</span> <span class="nx">to</span> <span class="nx">WSL</span> <span class="nx">command</span>
-<span class="nx">$</span> <span class="nx">cd</span> <span class="o">/</span><span class="nx">tmp</span> <span class="err">#</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">store</span> <span class="nx">temporary</span> <span class="nx">files</span> 
-<span class="nx">$</span> <span class="nx">wget</span> <span class="nx">https</span><span class="o">:</span><span class="c1">//repo.anaconda.com/archive/Anaconda3-2023.03-Linux-x86_64.sh # downloadable file</span>
-<span class="nx">$</span> <span class="nx">chmod</span> <span class="o">+</span><span class="nx">x</span> <span class="nx">Anaconda3</span><span class="o">-</span><span class="mf">2022.05</span><span class="o">-</span><span class="nx">Linux</span><span class="o">-</span><span class="nx">x86_64</span><span class="p">.</span><span class="nx">sh</span> <span class="err">#</span> <span class="nx">chmod</span> <span class="p">(</span><span class="nx">change</span> <span class="nx">mode</span> <span class="nx">command</span><span class="p">)</span> <span class="nx">changes</span> <span class="nx">permissions</span> <span class="k">for</span> <span class="nx">a</span> <span class="nx">file</span> <span class="nx">or</span> <span class="nx">directory</span> 
-<span class="err">#</span> <span class="nx">Answer</span> <span class="nx">yes</span> <span class="nx">to</span> <span class="nx">all</span> <span class="nx">the</span> <span class="nx">prompts</span>
-<span class="nx">$</span> <span class="p">.</span><span class="o">/</span><span class="nx">Anaconda3</span><span class="o">-</span><span class="mf">2022.05</span><span class="o">-</span><span class="nx">Linux</span><span class="o">-</span><span class="nx">x86_64</span><span class="p">.</span><span class="nx">sh</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
+</div>PS C:\Users\UserName&gt; wsl  # Windows prompt to WSL command
+$ cd /tmp # used to store temporary files 
+$ wget https://repo.anaconda.com/archive/Anaconda3-2023.03-Linux-x86_64.sh # downloadable file
+$ chmod +x Anaconda3-2022.05-Linux-x86_64.sh # chmod (change mode command) changes permissions for a file or directory 
+# Answer yes to all the prompts
+$ ./Anaconda3-2022.05-Linux-x86_64.sh 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -220,40 +203,12 @@ window.onload = wrap_img;
 
 </div>
 </div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+</div>PS C:\Users\ShayM&gt; wsl  # Windows prompt
+(base) shay@MSI:/mnt/c/Users/ShayM$ cd ~ # WSL prompt
+(base) shay@MSI:~$ # WSL home, best place to install files
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">PS</span> <span class="nx">C</span><span class="o">:</span><span class="err">\</span><span class="nx">Users</span><span class="err">\</span><span class="nx">ShayM</span><span class="o">&gt;</span> <span class="nx">wsl</span>  <span class="err">#</span> <span class="nx">Windows</span> <span class="nx">prompt</span>
-<span class="p">(</span><span class="nx">base</span><span class="p">)</span> <span class="nx">shay</span><span class="err">@</span><span class="nx">MSI</span><span class="o">:</span><span class="err">/mnt/c/Users/ShayM$ cd ~ # WSL prompt</span>
-<span class="p">(</span><span class="nx">base</span><span class="p">)</span> <span class="nx">shay</span><span class="err">@</span><span class="nx">MSI</span><span class="o">:~</span><span class="nx">$</span> <span class="err">#</span> <span class="nx">WSL</span> <span class="nx">home</span><span class="p">,</span> <span class="nx">best</span> <span class="nx">place</span> <span class="nx">to</span> <span class="nx">install</span> <span class="nx">files</span>
-
-<span class="err">#</span> <span class="nx">you</span> <span class="nx">can</span> <span class="nx">check</span> <span class="nx">your</span> <span class="nx">conda</span> <span class="nx">versions</span>
-<span class="p">(</span><span class="nx">base</span><span class="p">)</span> <span class="nx">id</span><span class="o">:~</span><span class="nx">$</span> <span class="nx">conda</span> <span class="o">--</span><span class="nx">version</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Proof-of-Conda">
-<a class="anchor" href="#Proof-of-Conda" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proof of Conda<a class="anchor-link" href="#Proof-of-Conda"> </a>
-</h3>
-<p><img src="https://user-images.githubusercontent.com/111464932/234680906-a3d80332-22c8-40e2-9c8e-4c5dd58f5674.png" alt="image"></p>
-
-</div>
-</div>
-</div>
+# you can check your conda versions
+(base) id:~$ conda --version 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -305,6 +260,17 @@ $ brew install java # openjdk install</p>
 <ul>
 <li>Hacks: Screen shot that you have conda installed  </li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Proof-of-Conda-(Hack)">
+<a class="anchor" href="#Proof-of-Conda-(Hack)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proof of Conda (Hack)<a class="anchor-link" href="#Proof-of-Conda-(Hack)"> </a>
+</h3>
+<p><img src="https://user-images.githubusercontent.com/111464932/234680906-a3d80332-22c8-40e2-9c8e-4c5dd58f5674.png" alt="image"></p>
 
 </div>
 </div>
@@ -474,38 +440,38 @@ You can monitor the status of your site in the GitHub Pages section of your repo
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// prepare fetch urls</span>
-  <span class="c1">// const url = "https://ssjn.nighthawkcodescrums.gq/api/song";</span>
-  <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">"https://ssjncpt.duckdns.org/api/song"</span><span class="p">;</span>
-  <span class="kr">const</span> <span class="nx">sad_url</span> <span class="o">=</span> <span class="nx">url</span> <span class="o">+</span> <span class="s2">"/sad/"</span><span class="p">;</span>  <span class="c1">// sad category</span>
-  <span class="kr">const</span> <span class="nx">happy_url</span> <span class="o">=</span> <span class="nx">url</span> <span class="o">+</span> <span class="s2">"/happy/"</span><span class="p">;</span>  <span class="c1">// happy category</span>
-  <span class="kr">const</span> <span class="nx">rage_url</span> <span class="o">=</span> <span class="nx">url</span> <span class="o">+</span> <span class="s2">"/rage/"</span><span class="p">;</span>  <span class="c1">// rage category</span>
-  <span class="kr">const</span> <span class="nx">indian_url</span> <span class="o">=</span> <span class="nx">url</span> <span class="o">+</span> <span class="s2">"/indian/"</span><span class="p">;</span> <span class="c1">// indian category</span>
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">prepare</span> <span class="n">fetch</span> <span class="n">urls</span>
+  <span class="o">//</span> <span class="n">const</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://ssjn.nighthawkcodescrums.gq/api/song"</span><span class="p">;</span>
+  <span class="n">const</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://ssjncpt.duckdns.org/api/song"</span><span class="p">;</span>
+  <span class="n">const</span> <span class="n">sad_url</span> <span class="o">=</span> <span class="n">url</span> <span class="o">+</span> <span class="s2">"/sad/"</span><span class="p">;</span>  <span class="o">//</span> <span class="n">sad</span> <span class="n">category</span>
+  <span class="n">const</span> <span class="n">happy_url</span> <span class="o">=</span> <span class="n">url</span> <span class="o">+</span> <span class="s2">"/happy/"</span><span class="p">;</span>  <span class="o">//</span> <span class="n">happy</span> <span class="n">category</span>
+  <span class="n">const</span> <span class="n">rage_url</span> <span class="o">=</span> <span class="n">url</span> <span class="o">+</span> <span class="s2">"/rage/"</span><span class="p">;</span>  <span class="o">//</span> <span class="n">rage</span> <span class="n">category</span>
+  <span class="n">const</span> <span class="n">indian_url</span> <span class="o">=</span> <span class="n">url</span> <span class="o">+</span> <span class="s2">"/indian/"</span><span class="p">;</span> <span class="o">//</span> <span class="n">indian</span> <span class="n">category</span>
 
-  <span class="c1">// prepare fetch GET options</span>
-  <span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="nx">method</span><span class="o">:</span> <span class="s1">'GET'</span><span class="p">,</span> <span class="c1">// *GET, POST, PUT, DELETE, etc.</span>
-    <span class="nx">mode</span><span class="o">:</span> <span class="s1">'cors'</span><span class="p">,</span> <span class="c1">// cors, *cors, same-origin</span>
-    <span class="nx">cache</span><span class="o">:</span> <span class="s1">'default'</span><span class="p">,</span> <span class="c1">// *default, no-cache, reload, force-cache, only-if-cached</span>
-    <span class="nx">credentials</span><span class="o">:</span> <span class="s1">'omit'</span><span class="p">,</span> <span class="c1">// include, *same-origin, omit</span>
-    <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s1">'Content-Type'</span><span class="o">:</span> <span class="s1">'application/json'</span>
-      <span class="c1">// 'Content-Type': 'application/x-www-form-urlencoded',</span>
+  <span class="o">//</span> <span class="n">prepare</span> <span class="n">fetch</span> <span class="n">GET</span> <span class="n">options</span>
+  <span class="n">const</span> <span class="n">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">method</span><span class="p">:</span> <span class="s1">'GET'</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">GET</span><span class="p">,</span> <span class="n">POST</span><span class="p">,</span> <span class="n">PUT</span><span class="p">,</span> <span class="n">DELETE</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span>
+    <span class="n">mode</span><span class="p">:</span> <span class="s1">'cors'</span><span class="p">,</span> <span class="o">//</span> <span class="n">cors</span><span class="p">,</span> <span class="o">*</span><span class="n">cors</span><span class="p">,</span> <span class="n">same</span><span class="o">-</span><span class="n">origin</span>
+    <span class="n">cache</span><span class="p">:</span> <span class="s1">'default'</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">default</span><span class="p">,</span> <span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">reload</span><span class="p">,</span> <span class="n">force</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">only</span><span class="o">-</span><span class="k">if</span><span class="o">-</span><span class="n">cached</span>
+    <span class="n">credentials</span><span class="p">:</span> <span class="s1">'omit'</span><span class="p">,</span> <span class="o">//</span> <span class="n">include</span><span class="p">,</span> <span class="o">*</span><span class="n">same</span><span class="o">-</span><span class="n">origin</span><span class="p">,</span> <span class="n">omit</span>
+    <span class="n">headers</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'application/json'</span>
+      <span class="o">//</span> <span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'application/x-www-form-urlencoded'</span><span class="p">,</span>
     <span class="p">},</span>
   <span class="p">};</span>
-  <span class="c1">// prepare fetch PUT options, clones with JS Spread Operator (...)</span>
-  <span class="kr">const</span> <span class="nx">put_options</span> <span class="o">=</span> <span class="p">{...</span><span class="nx">options</span><span class="p">,</span> <span class="nx">method</span><span class="o">:</span> <span class="s1">'PUT'</span><span class="p">};</span> <span class="c1">// clones and replaces method</span>
+  <span class="o">//</span> <span class="n">prepare</span> <span class="n">fetch</span> <span class="n">PUT</span> <span class="n">options</span><span class="p">,</span> <span class="n">clones</span> <span class="k">with</span> <span class="n">JS</span> <span class="n">Spread</span> <span class="n">Operator</span> <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+  <span class="n">const</span> <span class="n">put_options</span> <span class="o">=</span> <span class="p">{</span><span class="o">...</span><span class="n">options</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="s1">'PUT'</span><span class="p">};</span> <span class="o">//</span> <span class="n">clones</span> <span class="ow">and</span> <span class="n">replaces</span> <span class="n">method</span>
 
-  <span class="c1">// fetch the API</span>
-  <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span>
-    <span class="c1">// response is a RESTful "promise" on any successful fetch</span>
-    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="c1">// check for response errors</span>
-      <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">!==</span> <span class="mf">200</span><span class="p">)</span> <span class="p">{</span>
-          <span class="nx">error</span><span class="p">(</span><span class="s1">'GET API response failure: '</span> <span class="o">+</span> <span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+  <span class="o">//</span> <span class="n">fetch</span> <span class="n">the</span> <span class="n">API</span>
+  <span class="n">fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span>
+    <span class="o">//</span> <span class="n">response</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">RESTful</span> <span class="s2">"promise"</span> <span class="n">on</span> <span class="nb">any</span> <span class="n">successful</span> <span class="n">fetch</span>
+    <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="o">//</span> <span class="n">check</span> <span class="k">for</span> <span class="n">response</span> <span class="n">errors</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">!==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+          <span class="n">error</span><span class="p">(</span><span class="s1">'GET API response failure: '</span> <span class="o">+</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="p">);</span>
           <span class="k">return</span><span class="p">;</span>
       <span class="p">}</span>
-      <span class="c1">// valid response will have JSON data</span>
+      <span class="o">//</span> <span class="n">valid</span> <span class="n">response</span> <span class="n">will</span> <span class="n">have</span> <span class="n">JSON</span> <span class="n">data</span>
     <span class="p">})</span>
 </pre></div>
 
@@ -555,8 +521,8 @@ You can monitor the status of your site in the GitHub Pages section of your repo
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"</span> <span class="nx">defer</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
-<span class="o">&lt;</span><span class="nx">link</span>  <span class="nx">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span>  <span class="nx">href</span><span class="o">=</span><span class="s2">"https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"</span> <span class="o">/&gt;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">"https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"</span> <span class="n">defer</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">link</span>  <span class="n">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span>  <span class="n">href</span><span class="o">=</span><span class="s2">"https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"</span> <span class="o">/&gt;</span>
 </pre></div>
 
     </div>
@@ -583,10 +549,10 @@ You can monitor the status of your site in the GitHub Pages section of your repo
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kr">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">mapquest</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">'map'</span><span class="p">,</span> <span class="p">{</span>
-    <span class="nx">center</span><span class="o">:</span> <span class="p">[</span><span class="mf">53.480759</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.242631</span><span class="p">],</span>
-    <span class="nx">layers</span><span class="o">:</span> <span class="nx">L</span><span class="p">.</span><span class="nx">mapquest</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">'map'</span><span class="p">),</span>
-    <span class="nx">zoom</span><span class="o">:</span> <span class="mf">12</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">const</span> <span class="nb">map</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">mapquest</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="s1">'map'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">center</span><span class="p">:</span> <span class="p">[</span><span class="mf">53.480759</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.242631</span><span class="p">],</span>
+    <span class="n">layers</span><span class="p">:</span> <span class="n">L</span><span class="o">.</span><span class="n">mapquest</span><span class="o">.</span><span class="n">tileLayer</span><span class="p">(</span><span class="s1">'map'</span><span class="p">),</span>
+    <span class="n">zoom</span><span class="p">:</span> <span class="mi">12</span>
   <span class="p">});</span>
 </pre></div>
 
@@ -615,7 +581,7 @@ You can monitor the status of your site in the GitHub Pages section of your repo
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">L</span><span class="p">.</span><span class="nx">mapquest</span><span class="p">.</span><span class="nx">key</span> <span class="o">=</span> <span class="s1">'YOUR-API-KEY-HERE'</span><span class="p">;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">L</span><span class="o">.</span><span class="n">mapquest</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="s1">'YOUR-API-KEY-HERE'</span><span class="p">;</span>
 </pre></div>
 
     </div>
@@ -657,20 +623,20 @@ Some API keys are accessed slightly differently, but the method is similar for t
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kr">import</span> <span class="nx">os</span>
-<span class="kr">import</span> <span class="nx">pandas</span> <span class="nx">as</span> <span class="nx">pd</span>
-<span class="nx">from</span> <span class="nx">flask</span> <span class="kr">import</span> <span class="nx">render_template</span>
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">render_template</span>
 
-<span class="err">@</span><span class="nx">app</span><span class="p">.</span><span class="nx">route</span><span class="p">(</span><span class="s1">'/songdata'</span><span class="p">)</span>
-<span class="nx">def</span> <span class="nx">songdata</span><span class="p">()</span><span class="o">:</span>
-    <span class="err">#</span> <span class="nx">Path</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">CSV</span> <span class="nx">file</span>
-    <span class="nx">csv_path</span> <span class="o">=</span> <span class="nx">os</span><span class="p">.</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">app</span><span class="p">.</span><span class="nx">static_folder</span><span class="p">,</span> <span class="s1">'songdata.csv'</span><span class="p">)</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/songdata'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">songdata</span><span class="p">():</span>
+    <span class="c1"># Path to the CSV file</span>
+    <span class="n">csv_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">static_folder</span><span class="p">,</span> <span class="s1">'songdata.csv'</span><span class="p">)</span>
 
-    <span class="err">#</span> <span class="nx">Read</span> <span class="nx">the</span> <span class="nx">CSV</span> <span class="nx">file</span> <span class="nx">into</span> <span class="nx">a</span> <span class="nx">pandas</span> <span class="nx">dataframe</span>
-    <span class="nx">df</span> <span class="o">=</span> <span class="nx">pd</span><span class="p">.</span><span class="nx">read_csv</span><span class="p">(</span><span class="nx">csv_path</span><span class="p">)</span>
+    <span class="c1"># Read the CSV file into a pandas dataframe</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">)</span>
 
-    <span class="err">#</span> <span class="nx">Render</span> <span class="nx">the</span> <span class="nx">dataframe</span> <span class="nx">as</span> <span class="nx">an</span> <span class="nx">HTML</span> <span class="nx">table</span> <span class="nx">using</span> <span class="nx">Jinja2</span>
-    <span class="k">return</span> <span class="nx">render_template</span><span class="p">(</span><span class="s1">'songdata.html'</span><span class="p">,</span> <span class="nx">table</span><span class="o">=</span><span class="nx">df</span><span class="p">.</span><span class="nx">to_html</span><span class="p">(</span><span class="nx">index</span><span class="o">=</span><span class="nx">False</span><span class="p">))</span>
+    <span class="c1"># Render the dataframe as an HTML table using Jinja2</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'songdata.html'</span><span class="p">,</span> <span class="n">table</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -699,7 +665,10 @@ Some API keys are accessed slightly differently, but the method is similar for t
 <a class="anchor" href="#Example-with-Weather-API" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example with Weather API<a class="anchor-link" href="#Example-with-Weather-API"> </a>
 </h3>
 <ul>
-<li>What method is being used in these cells?</li>
+<li>What method is being used in these cells?<blockquote>
+<p>GET</p>
+</blockquote>
+</li>
 </ul>
 
 </div>
@@ -712,20 +681,20 @@ Some API keys are accessed slightly differently, but the method is similar for t
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kr">import</span> <span class="nx">requests</span>
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="nx">url</span> <span class="o">=</span> <span class="s2">"https://yahoo-weather5.p.rapidapi.com/weather"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://yahoo-weather5.p.rapidapi.com/weather"</span>
 
-<span class="nx">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"location"</span><span class="o">:</span><span class="s2">"San Diego"</span><span class="p">,</span><span class="s2">"format"</span><span class="o">:</span><span class="s2">"json"</span><span class="p">,</span><span class="s2">"u"</span><span class="o">:</span><span class="s2">"f"</span><span class="p">}</span>
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"location"</span><span class="p">:</span><span class="s2">"San Diego"</span><span class="p">,</span><span class="s2">"format"</span><span class="p">:</span><span class="s2">"json"</span><span class="p">,</span><span class="s2">"u"</span><span class="p">:</span><span class="s2">"f"</span><span class="p">}</span>
 
-<span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="s2">"X-RapidAPI-Key"</span><span class="o">:</span> <span class="s2">"4abcb54450msh7468dfd72294e89p18fbaajsn6d4200063b39"</span><span class="p">,</span>
-	<span class="s2">"X-RapidAPI-Host"</span><span class="o">:</span> <span class="s2">"yahoo-weather5.p.rapidapi.com"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"4abcb54450msh7468dfd72294e89p18fbaajsn6d4200063b39"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"yahoo-weather5.p.rapidapi.com"</span>
 <span class="p">}</span>
 
-<span class="nx">response</span> <span class="o">=</span> <span class="nx">requests</span><span class="p">.</span><span class="nx">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="nx">headers</span><span class="o">=</span><span class="nx">headers</span><span class="p">,</span> <span class="nx">params</span><span class="o">=</span><span class="nx">querystring</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
 
-<span class="nx">print</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -764,27 +733,27 @@ Some API keys are accessed slightly differently, but the method is similar for t
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kr">import</span> <span class="nx">requests</span>
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="nx">url</span> <span class="o">=</span> <span class="s2">"https://yahoo-weather5.p.rapidapi.com/weather"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://yahoo-weather5.p.rapidapi.com/weather"</span>
 
-<span class="nx">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"location"</span><span class="o">:</span><span class="s2">"San Diego"</span><span class="p">,</span><span class="s2">"format"</span><span class="o">:</span><span class="s2">"json"</span><span class="p">,</span><span class="s2">"u"</span><span class="o">:</span><span class="s2">"f"</span><span class="p">}</span>
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"location"</span><span class="p">:</span><span class="s2">"San Diego"</span><span class="p">,</span><span class="s2">"format"</span><span class="p">:</span><span class="s2">"json"</span><span class="p">,</span><span class="s2">"u"</span><span class="p">:</span><span class="s2">"f"</span><span class="p">}</span>
 
-<span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="s2">"X-RapidAPI-Key"</span><span class="o">:</span> <span class="s2">"4abcb54450msh7468dfd72294e89p18fbaajsn6d4200063b39"</span><span class="p">,</span>
-	<span class="s2">"X-RapidAPI-Host"</span><span class="o">:</span> <span class="s2">"yahoo-weather5.p.rapidapi.com"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"4abcb54450msh7468dfd72294e89p18fbaajsn6d4200063b39"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"yahoo-weather5.p.rapidapi.com"</span>
 <span class="p">}</span>
 
-<span class="nx">response</span> <span class="o">=</span> <span class="nx">requests</span><span class="p">.</span><span class="nx">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="nx">headers</span><span class="o">=</span><span class="nx">headers</span><span class="p">,</span> <span class="nx">params</span><span class="o">=</span><span class="nx">querystring</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
 
-<span class="nx">print</span><span class="p">(</span><span class="s2">"San Diego Weather Forecast:"</span> <span class="o">+</span> <span class="s2">"\n"</span><span class="p">)</span>
-<span class="nx">forecast</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">().</span><span class="nx">get</span><span class="p">(</span><span class="s2">"forecasts"</span><span class="p">)</span>
-<span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span>
-<span class="k">while</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">(</span><span class="nx">forecast</span><span class="p">)</span><span class="o">:</span>
-	<span class="k">for</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span> <span class="k">in</span> <span class="nx">forecast</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">items</span><span class="p">()</span><span class="o">:</span>
-		<span class="nx">print</span><span class="p">(</span><span class="s2">"\t"</span> <span class="o">+</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
-	<span class="nx">i</span> <span class="o">+=</span> <span class="mf">1</span>
-	<span class="nx">print</span><span class="p">(</span><span class="s2">"\n"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"San Diego Weather Forecast:"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">forecast</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"forecasts"</span><span class="p">)</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">forecast</span><span class="p">):</span>
+	<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">forecast</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+		<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span> <span class="o">+</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+	<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -915,17 +884,94 @@ Some API keys are accessed slightly differently, but the method is similar for t
 <li>Popcorn questions answered within lesson (.2)</li>
 <li>Screenshot showing proof that conda is installed (.1)</li>
 <li>Create 3 quiz questions to demonstrate the main steps in creating a repository on Github (.1)</li>
-<li>Fetch from a third party API, and display json data. Then use the json data in any simple JavaScript function (hint: parse, this makes json data into a JavaScript object) (.4)<ul>
-<li>In your code, comment on how you implemented a 3rd party API. Reflect on how using the 3rd party API helped.</li>
+<li>Fetch from a third party API, and display json data. Then use the json data in any simple JavaScript function (hint: parse, this makes json data into a JavaScript object) (.4)</li>
+<li>here's a link: <a href="https://azeem-khan1.github.io/FE-BE-Hacks/">https://azeem-khan1.github.io/FE-BE-Hacks/</a> + <a href="https://github.com/azeem-khan1/FE-BE-Hacks">source code</a><ul>
+<li>In your code, comment on how you implemented a 3rd party API. Reflect on how using the 3rd party API helped.<ul>
+<li>Using the third-party car API in my code allows me to fetch data about cars from a remote server and use that data in my web app</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Pull request successful completion: (.1)</li>
 </ul>
 <p>Extra: Use fetch() and display data from an API, self-made or third party (.1)</p>
+<blockquote>
+<p><a href="https://azeem-khan1.github.io/FE-BE-Hacks/">https://azeem-khan1.github.io/FE-BE-Hacks/</a></p>
+</blockquote>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<script>
+    async function sort() {
+    const url = 'https://car-data.p.rapidapi.com/cars?limit=10&page=0';
+    const options = {
+        method: 'GET',
+        headers: {
+            'content-type': 'application/octet-stream',
+            'X-RapidAPI-Key': '7dc092b8d8mshcbfaccb5c82b9eap1fe7fdjsna2cb1a33dcb0',
+            'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
+        }
+    };
+    const req = await fetch(url, options)
+        .then(res => {return res.json()})
+        .then(data => {console.log(data)})
+        .catch(error => console.log('ERROR'))
+    };
+
+    sort();
+</script>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://car-data.p.rapidapi.com/cars"</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"limit"</span><span class="p">:</span><span class="s2">"10"</span><span class="p">,</span><span class="s2">"page"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"content-type"</span><span class="p">:</span> <span class="s2">"application/octet-stream"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"7dc092b8d8mshcbfaccb5c82b9eap1fe7fdjsna2cb1a33dcb0"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"car-data.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'id': 9582, 'year': 2008, 'make': 'Buick', 'model': 'Enclave', 'type': 'SUV'}, {'id': 9583, 'year': 2006, 'make': 'MINI', 'model': 'Convertible', 'type': 'Convertible'}, {'id': 9584, 'year': 2019, 'make': 'Volvo', 'model': 'XC90', 'type': 'SUV'}, {'id': 9585, 'year': 1999, 'make': 'Ford', 'model': 'Taurus', 'type': 'Sedan, Wagon'}, {'id': 9586, 'year': 2020, 'make': 'Volvo', 'model': 'XC60', 'type': 'SUV'}, {'id': 9587, 'year': 2006, 'make': 'HUMMER', 'model': 'H2', 'type': 'SUV, Pickup'}, {'id': 9588, 'year': 2016, 'make': 'GMC', 'model': 'Sierra 1500 Crew Cab', 'type': 'Pickup'}, {'id': 9589, 'year': 2008, 'make': 'GMC', 'model': 'Canyon Crew Cab', 'type': 'Pickup'}, {'id': 9590, 'year': 2016, 'make': 'Subaru', 'model': 'Outback', 'type': 'SUV'}, {'id': 9591, 'year': 2010, 'make': 'Mitsubishi', 'model': 'Outlander', 'type': 'SUV'}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
