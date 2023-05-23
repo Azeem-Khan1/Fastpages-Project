@@ -4,21 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Fastpages Local Server (Hacks) | Azeem Khan</title>
+<title>Javascript Check-in | Azeem Khan</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Fastpages Local Server (Hacks)" />
+<meta property="og:title" content="Javascript Check-in" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Hacks for Fastpages Local Server (Week 4)" />
-<meta property="og:description" content="Hacks for Fastpages Local Server (Week 4)" />
-<link rel="canonical" href="https://azeem-khan1.github.io/fastpages-project/week4/fastpageslocalserver" />
-<meta property="og:url" content="https://azeem-khan1.github.io/fastpages-project/week4/fastpageslocalserver" />
+<meta name="description" content="Azeem Khan’s first blog." />
+<meta property="og:description" content="Azeem Khan’s first blog." />
+<link rel="canonical" href="https://azeem-khan1.github.io/fastpages-project/javascriptcheckin" />
+<meta property="og:url" content="https://azeem-khan1.github.io/fastpages-project/javascriptcheckin" />
 <meta property="og:site_name" content="Azeem Khan" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-14T00:00:00-05:00" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Fastpages Local Server (Hacks)" />
+<meta property="twitter:title" content="Javascript Check-in" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-14T00:00:00-05:00","datePublished":"2022-09-14T00:00:00-05:00","description":"Hacks for Fastpages Local Server (Week 4)","headline":"Fastpages Local Server (Hacks)","mainEntityOfPage":{"@type":"WebPage","@id":"https://azeem-khan1.github.io/fastpages-project/week4/fastpageslocalserver"},"url":"https://azeem-khan1.github.io/fastpages-project/week4/fastpageslocalserver"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Azeem Khan’s first blog.","headline":"Javascript Check-in","url":"https://azeem-khan1.github.io/fastpages-project/javascriptcheckin"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages-project/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://azeem-khan1.github.io/fastpages-project/feed.xml" title="Azeem Khan" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages-project/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -70,47 +69,151 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Fastpages Local Server (Hacks)</h1><p class="page-description">Hacks for Fastpages Local Server (Week 4)</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-14T00:00:00-05:00" itemprop="datePublished">
-        Sep 14, 2022
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      1 min read
-    
-</span></p>
+    <h1 class="post-title">Javascript Check-in</h1>
+  </header>
 
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      
-        <a class="category-tags-link" href="/fastpages-project/categories/#week 04">week 04</a>
-        
-      
-      </p>
-    
+  <div class="post-content">
+    <html>
+    <head>
+        <title>Cartesian to Polar Converter</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+                text-align: center;
+            }
 
-    </header>
+            h1 {
+                margin-bottom: 20px;
+            }
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#proof-of-docker-desktop-and-fastpages-local-server">Proof of Docker Desktop and Fastpages Local Server</a></li>
-</ul><h1 id="proof-of-docker-desktop-and-fastpages-local-server">
-<a class="anchor" href="#proof-of-docker-desktop-and-fastpages-local-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proof of Docker Desktop and Fastpages Local Server</h1>
+            label {
+                display: block;
+                padding-bottom: 7px;
+                margin-top: 10px;
+            }
 
-<p><img src="/fastpages-project/images/dockerdesktop.jpg" alt=""></p>
+            input[type="number"] {
+                text-align: center;
+                outline: none;
+                border: 1px solid white;
+                border-radius: 5px;
+                background-color: #e9e9e9;
+                width: 100px;
+                padding: 5px;
+                margin: 5px;
+                font-size: 14px;
+            }
 
-  </div><!-- from https://github.com/utterance/utterances -->
-<script src="https://utteranc.es/client.js"
-        repo="Azeem-Khan1/fastpages-project"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script><a class="u-url" href="/fastpages-project/week4/fastpageslocalserver" hidden></a>
+            button {
+                margin-top: 15px;
+                padding: 16px;
+                font-size: 14px;
+                background-color: #4caf50;
+                color: white;
+                border: 1.5px solid #4caf50;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            #result {
+                margin-top: 20px;
+            }
+
+            #result h4 {
+                margin: 5px 0;
+            }
+
+            #polar {
+                font-size: 16px;
+            }
+
+            #canvas {
+                border: 2px solid black;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cartesian to Polar Converter</h1>
+        <label for="x">X-coordinate:</label>
+        <input type="number" id="x" />
+        <br />
+        <label for="y">Y-coordinate:</label>
+        <input type="number" id="y" />
+        <br />
+        <button onclick="convert()">Convert</button>
+        <br />
+        <div id="result">
+            <h4>Polar Coordinates:</h4>
+            <p id="polar"></p>
+        </div>
+        <br />
+        <canvas id="canvas" width="400" height="400"></canvas>
+
+        <script>
+            // Conversion
+            function cartesianToPolar(x, y) {
+                const radius = Math.sqrt(x ** 2 + y ** 2);
+                const angle = Math.atan2(y, x);
+                return [radius, angle];
+            }
+
+            // Draw a point on the canvas
+            function drawPoint(ctx, x, y, color) {
+                ctx.beginPath();
+                ctx.arc(x, y, 4, 0, Math.PI * 2);
+                ctx.fillStyle = color;
+                ctx.fill();
+            }
+
+            // Convert and plot the coordinates
+            function convert() {
+                const xInput = document.getElementById("x");
+                const yInput = document.getElementById("y");
+                const polarOutput = document.getElementById("polar");
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext("2d");
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                const x = parseFloat(xInput.value);
+                const y = parseFloat(yInput.value);
+
+                if (isNaN(x) || isNaN(y)) {
+                    polarOutput.textContent = "Invalid input";
+                    return;
+                }
+
+                const [radius, angle] = cartesianToPolar(x, y);
+
+                polarOutput.textContent = `Radius: ${radius.toFixed(
+                    2
+                )}, Angle: ${angle.toFixed(2)} radians`;
+
+                const centerX = canvas.width / 2;
+                const centerY = canvas.height / 2;
+
+                // Draw Cartesian coordinates
+                drawPoint(ctx, centerX + x, centerY - y, "blue");
+            }
+        </script>
+    </body>
+</html>
+
+  </div>
+
 </article>
 
       </div>
