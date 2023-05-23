@@ -1,0 +1,141 @@
+---
+layout: page
+permalink: /javascriptcheckin
+title: Javascript Check-in
+toc: false
+---
+<html>
+    <head>
+        <title>Cartesian to Polar Converter</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+                text-align: center;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            label {
+                display: block;
+                padding-bottom: 7px;
+                margin-top: 10px;
+            }
+
+            input[type="number"] {
+                text-align: center;
+                outline: none;
+                border: 1px solid white;
+                border-radius: 5px;
+                background-color: #e9e9e9;
+                width: 100px;
+                padding: 5px;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            button {
+                margin-top: 15px;
+                padding: 16px;
+                font-size: 14px;
+                background-color: #4caf50;
+                color: white;
+                border: 1.5px solid #4caf50;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            #result {
+                margin-top: 20px;
+            }
+
+            #result h4 {
+                margin: 5px 0;
+            }
+
+            #polar {
+                font-size: 16px;
+            }
+
+            #canvas {
+                border: 2px solid black;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cartesian to Polar Converter</h1>
+        <label for="x">X-coordinate:</label>
+        <input type="number" id="x" />
+        <br />
+        <label for="y">Y-coordinate:</label>
+        <input type="number" id="y" />
+        <br />
+        <button onclick="convert()">Convert</button>
+        <br />
+        <div id="result">
+            <h4>Polar Coordinates:</h4>
+            <p id="polar"></p>
+        </div>
+        <br />
+        <canvas id="canvas" width="400" height="400"></canvas>
+
+        <script>
+            // Conversion
+            function cartesianToPolar(x, y) {
+                const radius = Math.sqrt(x ** 2 + y ** 2);
+                const angle = Math.atan2(y, x);
+                return [radius, angle];
+            }
+
+            // Draw a point on the canvas
+            function drawPoint(ctx, x, y, color) {
+                ctx.beginPath();
+                ctx.arc(x, y, 4, 0, Math.PI * 2);
+                ctx.fillStyle = color;
+                ctx.fill();
+            }
+
+            // Convert and plot the coordinates
+            function convert() {
+                const xInput = document.getElementById("x");
+                const yInput = document.getElementById("y");
+                const polarOutput = document.getElementById("polar");
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext("2d");
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                const x = parseFloat(xInput.value);
+                const y = parseFloat(yInput.value);
+
+                if (isNaN(x) || isNaN(y)) {
+                    polarOutput.textContent = "Invalid input";
+                    return;
+                }
+
+                const [radius, angle] = cartesianToPolar(x, y);
+
+                polarOutput.textContent = `Radius: ${radius.toFixed(
+                    2
+                )}, Angle: ${angle.toFixed(2)} radians`;
+
+                const centerX = canvas.width / 2;
+                const centerY = canvas.height / 2;
+
+                // Draw Cartesian coordinates
+                drawPoint(ctx, centerX + x, centerY - y, "blue");
+            }
+        </script>
+    </body>
+</html>
